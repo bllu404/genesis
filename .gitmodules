@@ -1,0 +1,3 @@
+[submodule "cairo/perlin-noise-cairo"]
+	path = cairo/perlin-noise-cairo
+	url = git@github.com:bllu404/perlin-noise-cairo.git
