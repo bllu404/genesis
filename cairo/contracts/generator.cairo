@@ -30,18 +30,24 @@ const SURFACE_BASELINE = 100*Math64x61_ONE # At a baseline of 100 and amplitude 
 func stone_blocks_balance(user) -> (numBlocks):
 end
 
-##### GAME STATE MAPPING #####
-# Whenever someone breaks or places a block, this mapping is updated to reflect that. 
-# The value (as in key-value pair) of each coordinate is set to zero by default, and thus 0 is considered the uninitialized state.
-# Whenever a block is interacted with, this value is updated to one of the following block types:
-
 ##### BLOCK TYPES #####
 const BTYPE_UNINITIALIZED = 0
 const BTYPE_AIR = 1
 const BTYPE_STONE = 2
 
+##### GAME STATE MAPPING #####
+# Whenever someone breaks or places a block, this mapping is updated to reflect that. 
+# The value (as in key-value pair) of each coordinate is set to zero by default, and thus 0 is considered the uninitialized state.
+# Whenever a block is interacted with, this value is updated to one of the block types defined above (not including the uninitialized type)
+
+
 @storage_var 
 func game_state(x, y, z) -> (block_type):
+end
+
+# This event should be emitted any time a block is updated (mined or placed)
+@event
+func block_updated(x,y,z, block_type):
 end
 
 @external
@@ -58,6 +64,7 @@ func mine_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : 
     end 
 
     game_state.write(x,y,z, BTYPE_AIR) # Setting the state of the block to "air" since it was just mined
+    block_updated.emit(x,y,z, BTYPE_AIR)
     ret
 end
 
@@ -74,7 +81,9 @@ func place_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr :
         assert_le(1, user_balance)
         game_state.write(x,y,z, BTYPE_STONE)
         stone_blocks_balance.write(user, user_balance - 1)
+        block_updated.emit(x,y,z, BTYPE_STONE)
     end
+
     ret
 end
 
