@@ -1,10 +1,11 @@
 %lang starknet
 
 from starkware.cairo.common.cairo_builtins import HashBuiltin, BitwiseBuiltin
+from starkware.cairo.common.bitwise import bitwise_and
 from starkware.cairo.common.registers import get_label_location
 from starkware.starknet.common.syscalls import get_caller_address
 from starkware.cairo.common.math_cmp import is_le
-from starkware.cairo.common.math import assert_le
+from starkware.cairo.common.math import assert_le, unsigned_div_rem
 from contracts.perlin_noise import noise_custom
 from contracts.Math64x61 import (
     Math64x61_add,
@@ -172,8 +173,17 @@ end
 # Number of state values (e.g., BTYPE_AIR, BTYPE_STONE) to be stored per felt in the storage map. 
 # By storing 31 state values per felt, we allocate 8 bits for each state value. 
 const NUM_STATE_PER_FELT = 31
-const 8_BITS
-func read_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,z):
+const FIRST_8BITS = 0xff # ANDing this with a felt yields the first 8 bits of the felt
+
+func read_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,z) -> (block_state):
+    let (q,r) = unsigned_div_rem(z, NUM_STATE_PER_FELT)
+
+    let (packed_block_state) = state.read(x,y,q)
+    let (shift) = pow_256(r)
+
+    let (left_shifted_state,_) = unsigned_div_rem(packed_block_state, shift)
+    let (block_state) = bitwise_and(left_shifted_state, FIRST_8BITS)
+    return (block_state)
 end 
 
 func write_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,block_type):
@@ -181,9 +191,11 @@ end
 
 # x // 256^n is equivalent to x >> 8*n
 # x * 256^n is equivalent to x << 8*n
-func pow_256(exponent) -> (power):
+
+# Returns the nth power of 256
+func pow_256(n) -> (power):
     let (pows_address) = get_label_location(pows)
-    return (power=[pows_address + exponent])
+    return (power=[pows_address + n])
 
     pows:
     dw 0x1 # 256^0
