@@ -61,11 +61,22 @@ func mine_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : 
     if block_state == BTYPE_STONE:
         let (balance) = stone_blocks_balance.read(user)
         stone_blocks_balance.write(user, balance + 1)
+
+        # Rebinding all implicit pointers
+        tempvar syscall_ptr : felt* = syscall_ptr
+        tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+        tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+        tempvar range_check_ptr = range_check_ptr
+    else:
+        tempvar syscall_ptr : felt* = syscall_ptr
+        tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+        tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+        tempvar range_check_ptr = range_check_ptr
     end 
 
     game_state.write(x,y,z, BTYPE_AIR) # Setting the state of the block to "air" since it was just mined
     block_updated.emit(x,y,z, BTYPE_AIR)
-    ret
+    return()
 end
 
 @external 
@@ -82,17 +93,38 @@ func place_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr :
         game_state.write(x,y,z, BTYPE_STONE)
         stone_blocks_balance.write(user, user_balance - 1)
         block_updated.emit(x,y,z, BTYPE_STONE)
+        
+        # Rebinding all implicit pointers
+        tempvar syscall_ptr : felt* = syscall_ptr
+        tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+        tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+        tempvar range_check_ptr = range_check_ptr
+    else:
+        tempvar syscall_ptr : felt* = syscall_ptr
+        tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+        tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+        tempvar range_check_ptr = range_check_ptr
     end
 
-    ret
+    return()
 end
 
 @view
-func get_block{pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(x,y,z) -> (block_type):
+func get_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(x,y,z) -> (block_type):
+    alloc_locals
     let (block_state) = game_state.read(x,y,z)
 
     if block_state == 0:
         let (block_state) = generate_block(x,y,z)
+        tempvar syscall_ptr : felt* = syscall_ptr
+        tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+        tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+        tempvar range_check_ptr = range_check_ptr
+    else:
+        tempvar syscall_ptr : felt* = syscall_ptr
+        tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+        tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+        tempvar range_check_ptr = range_check_ptr
     end
 
     return (block_type=block_state)

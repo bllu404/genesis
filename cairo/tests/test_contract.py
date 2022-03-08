@@ -12,7 +12,6 @@ CONTRACT_FILE = os.path.join("contracts", "generator.cairo")
 # decorator and the ``async`` keyword are needed.
 @pytest.mark.asyncio
 async def test_terrain_generator():
-    """Test increase_balance method."""
     # Create a new Starknet class that simulates the StarkNet
     # system.
     starknet = await Starknet.empty()
@@ -22,6 +21,15 @@ async def test_terrain_generator():
         source=CONTRACT_FILE,
     )
 
+    """ Testing generate_block method """
+    for i in range(20):
+        block = await contract.generate_block(10,10+i,10).call()
+        print()
+        print(block.result.block_type)
+        print(block.call_info.cairo_usage.n_steps)
+
+
+    """ Testing get_block method """
     for i in range(20):
         block = await contract.get_block(10,10+i,10).call()
         print()
