@@ -1,6 +1,7 @@
 %lang starknet
 
 from starkware.cairo.common.cairo_builtins import HashBuiltin, BitwiseBuiltin
+from starkware.cairo.common.registers import get_label_location
 from starkware.starknet.common.syscalls import get_caller_address
 from starkware.cairo.common.math_cmp import is_le
 from starkware.cairo.common.math import assert_le
@@ -25,24 +26,25 @@ const OCTAVE3_S = 50
 const SURFACE_AMPLITUDE = 50 # At an amplitude of 50, the difference in height between the lowest point on the surface of the terrain and the tallest 100. 
 const SURFACE_BASELINE = 100*Math64x61_ONE # At a baseline of 100 and amplitude of 50, the tallest block generated can have a height of 150. 
 
+##### BLOCK TYPES #####
+const BTYPE_UNINITIALIZED = 0
+const BTYPE_AIR = 1
+const BTYPE_STONE = 2
+
 # Stone block balance of each user
 @storage_var
 func stone_blocks_balance(user) -> (numBlocks):
 end
 
-##### BLOCK TYPES #####
-const BTYPE_UNINITIALIZED = 0
-const BTYPE_AIR = 1
-const BTYPE_STONE = 2
 
 ##### GAME STATE MAPPING #####
 # Whenever someone breaks or places a block, this mapping is updated to reflect that. 
 # The value (as in key-value pair) of each coordinate is set to zero by default, and thus 0 is considered the uninitialized state.
 # Whenever a block is interacted with, this value is updated to one of the block types defined above (not including the uninitialized type)
 
-
+# TO DO: Look into packing the block_types of multiple blocks into one felt. Using 252 bits of storage per like 2 bits of info is incredibly wasteful. 
 @storage_var 
-func game_state(x, y, z) -> (block_type):
+func state(x, y, z) -> (block_type):
 end
 
 # This event should be emitted any time a block is updated (mined or placed)
@@ -74,7 +76,7 @@ func mine_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : 
         tempvar range_check_ptr = range_check_ptr
     end 
 
-    game_state.write(x,y,z, BTYPE_AIR) # Setting the state of the block to "air" since it was just mined
+    state.write(x,y,z, BTYPE_AIR) # Setting the state of the block to "air" since it was just mined
     block_updated.emit(x,y,z, BTYPE_AIR)
     return()
 end
@@ -90,7 +92,7 @@ func place_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr :
     if block_state == BTYPE_AIR:
         let (user_balance) = stone_blocks_balance.read(user)
         assert_le(1, user_balance)
-        game_state.write(x,y,z, BTYPE_STONE)
+        state.write(x,y,z, BTYPE_STONE)
         stone_blocks_balance.write(user, user_balance - 1)
         block_updated.emit(x,y,z, BTYPE_STONE)
         
@@ -112,7 +114,7 @@ end
 @view
 func get_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(x,y,z) -> (block_type):
     alloc_locals
-    let (block_state) = game_state.read(x,y,z)
+    let (block_state) = state.read(x,y,z)
 
     if block_state == 0:
         let (block_state) = generate_block(x,y,z)
@@ -154,4 +156,65 @@ func generate_block{pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, 
     else:
         return(block_type=BTYPE_AIR) 
     end
+end
+
+
+####### STORAGE MAP UTILITIES ######
+
+# The storage map `state` maps the coordinates of each block to its block type. (1,1,1) -> stone, (1,1,2) -> air, etc.
+# The image of the map is a 252-bit felt for each coordinate, however each block_type (like stone and air) uses only a fraction of those bits. 
+# So we can reduce the storage used significantly by packing together the state of many blocks into one felt.
+# 
+# Here we chose to pack blocks vertically. 
+# This means that the felt associated with (x,y,0) will actually store the state of (x,y,0), (x,y,1), ..., (x,y,30).
+# (x,y,1) will store the state of (x,y,31), (x,y,32), ..., (x,y,61), and so on. 
+
+# Number of state values (e.g., BTYPE_AIR, BTYPE_STONE) to be stored per felt in the storage map. 
+# By storing 31 state values per felt, we allocate 8 bits for each state value. 
+const NUM_STATE_PER_FELT = 31
+const 8_BITS
+func read_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,z):
+end 
+
+func write_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,block_type):
+end
+
+# x // 256^n is equivalent to x >> 8*n
+# x * 256^n is equivalent to x << 8*n
+func pow_256(exponent) -> (power):
+    let (pows_address) = get_label_location(pows)
+    return (power=[pows_address + exponent])
+
+    pows:
+    dw 0x1 # 256^0
+    dw 0x100 # 256^1
+    dw 0x10000 # 256^2
+    dw 0x1000000 # 256^3 
+    dw 0x100000000 # 256^4
+    dw 0x10000000000 # 256^5
+    dw 0x1000000000000 # 256^6
+    dw 0x100000000000000 # 256^7
+    dw 0x10000000000000000 # 256^8
+    dw 0x1000000000000000000 # 256^9
+    dw 0x100000000000000000000 # 256^10
+    dw 0x10000000000000000000000 # 256^11
+    dw 0x1000000000000000000000000 # 256^12
+    dw 0x100000000000000000000000000 # 256^13
+    dw 0x10000000000000000000000000000 # 256^14
+    dw 0x1000000000000000000000000000000 # 256^15
+    dw 0x100000000000000000000000000000000 # 256^16
+    dw 0x10000000000000000000000000000000000 # 256^17
+    dw 0x1000000000000000000000000000000000000 # 256^18
+    dw 0x100000000000000000000000000000000000000 # 256^19
+    dw 0x10000000000000000000000000000000000000000 # 256^20
+    dw 0x1000000000000000000000000000000000000000000 # 256^21
+    dw 0x100000000000000000000000000000000000000000000 # 256^22
+    dw 0x10000000000000000000000000000000000000000000000 # 256^23
+    dw 0x1000000000000000000000000000000000000000000000000 # 256^24
+    dw 0x100000000000000000000000000000000000000000000000000 # 256^25
+    dw 0x10000000000000000000000000000000000000000000000000000 # 256^26
+    dw 0x1000000000000000000000000000000000000000000000000000000 # 256^27
+    dw 0x100000000000000000000000000000000000000000000000000000000 # 256^28
+    dw 0x10000000000000000000000000000000000000000000000000000000000 # 256^29
+    dw 0x1000000000000000000000000000000000000000000000000000000000000 # 256^30
 end
