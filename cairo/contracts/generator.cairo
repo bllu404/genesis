@@ -186,7 +186,23 @@ func read_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_pt
     return (block_state)
 end 
 
+# block_type must be 8 bits or less in size. The result will be unexpected otherwise.
 func write_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,block_type):
+    let (q,r) = unsigned_div_rem(z, NUM_STATE_PER_FELT)
+
+    let (packed_block_state) = state.read(x,y,q)
+
+    # pow_256(n) - 1 to get the bits before the 8 we want
+    # bit shift pow_256(n) to get the ones after the one we want
+    let (pow_r_plus1) = pow_256(r+1)
+    let (bits_before) = bitwise_and(packed_block_state, pow_r_plus1 - 1)
+    
+    let (bits_after_shifted,_) = unsigned_div_rem(packed_block_state, power_r_plus1)
+    tempvar bits_after = bits_after_shifted * pow_r_plus1
+
+    state.write(x,y,q, bits_before + block_type + bits_after)
+
+    return ()
 end
 
 # x // 256^n is equivalent to x >> 8*n
