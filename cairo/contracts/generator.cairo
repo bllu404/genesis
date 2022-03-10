@@ -31,6 +31,11 @@ const SURFACE_BASELINE = 100*Math64x61_ONE # At a baseline of 100 and amplitude 
 const BTYPE_UNINITIALIZED = 0
 const BTYPE_AIR = 1
 const BTYPE_STONE = 2
+const BTYPE_DIRT = 3
+const BTYPE_GRASS = 4
+const BTYPE_ORE = 5
+const BTYPE_WOOD = 6
+const BTYPE_LEAF = 7
 
 # Stone block balance of each user
 @storage_var
@@ -171,78 +176,98 @@ end
 # (x,y,1) will store the state of (x,y,31), (x,y,32), ..., (x,y,61), and so on. 
 
 # Number of state values (e.g., BTYPE_AIR, BTYPE_STONE) to be stored per felt in the storage map. 
-# By storing 31 state values per felt, we allocate 8 bits for each state value. 
-const NUM_STATE_PER_FELT = 31
-const FIRST_8BITS = 0xff # ANDing this with a felt yields the first 8 bits of the felt
+# By storing 41 state values per felt, we allocate 3 bits for each state value. 
+# This means we are making use of 123 bits per felt, as opposed to 3. The reason 
+const NUM_STATE_PER_FELT = 41
+const FIRST_3BITS = 7 # ANDing this with a felt yields the first 3 bits of the felt
 
+@external
 func read_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,z) -> (block_state):
+    alloc_locals
     let (q,r) = unsigned_div_rem(z, NUM_STATE_PER_FELT)
 
     let (packed_block_state) = state.read(x,y,q)
-    let (shift) = pow_256(r)
+    let (shift) = pow_8(r)
 
     let (left_shifted_state,_) = unsigned_div_rem(packed_block_state, shift)
-    let (block_state) = bitwise_and(left_shifted_state, FIRST_8BITS)
+    let (block_state) = bitwise_and(left_shifted_state, FIRST_3BITS)
     return (block_state)
 end 
 
 # block_type must be 8 bits or less in size. The result will be unexpected otherwise.
-func write_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,block_type):
-    let (q,r) = unsigned_div_rem(z, NUM_STATE_PER_FELT)
+@external
+func write_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,z, block_type):
+    alloc_locals
 
+    let (q,r) = unsigned_div_rem(z, NUM_STATE_PER_FELT)
     let (packed_block_state) = state.read(x,y,q)
 
-    # pow_256(n) - 1 to get the bits before the 8 we want
-    # bit shift pow_256(n) to get the ones after the one we want
-    let (pow_r_plus1) = pow_256(r+1)
-    let (bits_before) = bitwise_and(packed_block_state, pow_r_plus1 - 1)
-    
-    let (bits_after_shifted,_) = unsigned_div_rem(packed_block_state, power_r_plus1)
+    let (pow_r) = pow_8(r)
+    let (bits_before) = bitwise_and(packed_block_state, pow_r - 1)
+
+    tempvar pow_r_plus1 = pow_r * 8
+
+    let (bits_after_shifted,_) = unsigned_div_rem(packed_block_state, pow_r_plus1)
     tempvar bits_after = bits_after_shifted * pow_r_plus1
 
-    state.write(x,y,q, bits_before + block_type + bits_after)
+    state.write(x,y,q, bits_before + (block_type*pow_r) + bits_after)
 
     return ()
 end
 
-# x // 256^n is equivalent to x >> 8*n
-# x * 256^n is equivalent to x << 8*n
+# x // 8^n is equivalent to x >> 3*n
+# x * 8^n is equivalent to x << 3*n
 
-# Returns the nth power of 256
-func pow_256(n) -> (power):
+# Returns the nth power of 2^3 = 8, up to 8^41
+func pow_8(n) -> (power):
     let (pows_address) = get_label_location(pows)
     return (power=[pows_address + n])
 
     pows:
-    dw 0x1 # 256^0
-    dw 0x100 # 256^1
-    dw 0x10000 # 256^2
-    dw 0x1000000 # 256^3 
-    dw 0x100000000 # 256^4
-    dw 0x10000000000 # 256^5
-    dw 0x1000000000000 # 256^6
-    dw 0x100000000000000 # 256^7
-    dw 0x10000000000000000 # 256^8
-    dw 0x1000000000000000000 # 256^9
-    dw 0x100000000000000000000 # 256^10
-    dw 0x10000000000000000000000 # 256^11
-    dw 0x1000000000000000000000000 # 256^12
-    dw 0x100000000000000000000000000 # 256^13
-    dw 0x10000000000000000000000000000 # 256^14
-    dw 0x1000000000000000000000000000000 # 256^15
-    dw 0x100000000000000000000000000000000 # 256^16
-    dw 0x10000000000000000000000000000000000 # 256^17
-    dw 0x1000000000000000000000000000000000000 # 256^18
-    dw 0x100000000000000000000000000000000000000 # 256^19
-    dw 0x10000000000000000000000000000000000000000 # 256^20
-    dw 0x1000000000000000000000000000000000000000000 # 256^21
-    dw 0x100000000000000000000000000000000000000000000 # 256^22
-    dw 0x10000000000000000000000000000000000000000000000 # 256^23
-    dw 0x1000000000000000000000000000000000000000000000000 # 256^24
-    dw 0x100000000000000000000000000000000000000000000000000 # 256^25
-    dw 0x10000000000000000000000000000000000000000000000000000 # 256^26
-    dw 0x1000000000000000000000000000000000000000000000000000000 # 256^27
-    dw 0x100000000000000000000000000000000000000000000000000000000 # 256^28
-    dw 0x10000000000000000000000000000000000000000000000000000000000 # 256^29
-    dw 0x1000000000000000000000000000000000000000000000000000000000000 # 256^30
+    dw 0x1 # 8^0
+    dw 0x8 # 8^1
+    dw 0x40 # 8^2
+    dw 0x200 # 8^3
+    dw 0x1000 # 8^4
+    dw 0x8000 # 8^5
+    dw 0x40000 # 8^6
+    dw 0x200000 # 8^7
+    dw 0x1000000 # 8^8
+    dw 0x8000000 # 8^9
+    dw 0x40000000 # 8^10
+    dw 0x200000000 # 8^11
+    dw 0x1000000000 # 8^12
+    dw 0x8000000000 # 8^13
+    dw 0x40000000000 # 8^14
+    dw 0x200000000000 # 8^15
+    dw 0x1000000000000 # 8^16
+    dw 0x8000000000000 # 8^17
+    dw 0x40000000000000 # 8^18
+    dw 0x200000000000000 # 8^19
+    dw 0x1000000000000000 # 8^16
+    dw 0x8000000000000000 # 8^17
+    dw 0x40000000000000000 # 8^18
+    dw 0x200000000000000000 # 8^19
+    dw 0x1000000000000000000 # 8^20
+    dw 0x8000000000000000000 # 8^21
+    dw 0x40000000000000000000 # 8^22
+    dw 0x200000000000000000000 # 8^23
+    dw 0x1000000000000000000000 # 8^24
+    dw 0x8000000000000000000000 # 8^25
+    dw 0x40000000000000000000000 # 8^26
+    dw 0x200000000000000000000000 # 8^27
+    dw 0x1000000000000000000000000 # 8^28
+    dw 0x8000000000000000000000000 # 8^29
+    dw 0x40000000000000000000000000 # 8^30
+    dw 0x200000000000000000000000000 # 8^31
+    dw 0x1000000000000000000000000000 # 8^32
+    dw 0x8000000000000000000000000000 # 8^33
+    dw 0x40000000000000000000000000000 # 8^34
+    dw 0x200000000000000000000000000000 # 8^35
+    dw 0x1000000000000000000000000000000 # 8^36
+    dw 0x8000000000000000000000000000000 # 8^37
+    dw 0x40000000000000000000000000000000 # 8^38
+    dw 0x200000000000000000000000000000000 # 8^39
+    dw 0x1000000000000000000000000000000000 # 8^40
+    dw 0x8000000000000000000000000000000000 # 8^41
 end
