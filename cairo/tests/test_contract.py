@@ -36,13 +36,19 @@ async def test_terrain_generator():
         print(block.result.block_type)
         print(block.call_info.cairo_usage.n_steps)
     """
-
+    """
+    num_iters = 82
     # Testing packed state map
-    for i in range(5):
+    for i in range(num_iters):
         print(f"Writing {i}")
-        await contract.write_state(1,1,i, i%8).invoke()
+        await contract.write_state(i,1,1, i%8).invoke()
 
-    for i in range(5):
-        value = await contract.read_state(1,1,i).call()
+    for i in range(num_iters):
+        value = await contract.read_state(i,1,1).invoke()
         print(value.result.block_state)
-        #assert(value.result.block_state == i % 8)
+        assert(value.result.block_state == i % 8)
+    """
+    write = await contract.write_state(1,1,1, 1).invoke()
+    read = await contract.read_state(1,1,1).invoke()
+    print(f"Write steps: {write.call_info.cairo_usage.n_steps}")
+    print(f"Write steps: {read.call_info.cairo_usage.n_steps}")

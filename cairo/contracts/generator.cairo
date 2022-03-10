@@ -82,7 +82,7 @@ func mine_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : 
         tempvar range_check_ptr = range_check_ptr
     end 
 
-    state.write(x,y,z, BTYPE_AIR) # Setting the state of the block to "air" since it was just mined
+    write_state(x,y,z, BTYPE_AIR) # Setting the state of the block to "air" since it was just mined
     block_updated.emit(x,y,z, BTYPE_AIR)
     return()
 end
@@ -98,7 +98,7 @@ func place_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr :
     if block_state == BTYPE_AIR:
         let (user_balance) = stone_blocks_balance.read(user)
         assert_le(1, user_balance)
-        state.write(x,y,z, BTYPE_STONE)
+        write_state(x,y,z, BTYPE_STONE)
         stone_blocks_balance.write(user, user_balance - 1)
         block_updated.emit(x,y,z, BTYPE_STONE)
         
@@ -120,7 +120,7 @@ end
 @view
 func get_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(x,y,z) -> (block_type):
     alloc_locals
-    let (block_state) = state.read(x,y,z)
+    let (block_state) = read_state(x,y,z)
 
     if block_state == 0:
         let (block_state) = generate_block(x,y,z)
@@ -172,21 +172,22 @@ end
 # So we can reduce the storage used significantly by packing together the state of many blocks into one felt.
 # 
 # Here we chose to pack blocks vertically. 
-# This means that the felt associated with (x,y,0) will actually store the state of (x,y,0), (x,y,1), ..., (x,y,30).
-# (x,y,1) will store the state of (x,y,31), (x,y,32), ..., (x,y,61), and so on. 
+# This means that the felt associated with (0,y,z) will actually store the state of (0,y,z), (1,y,z), ..., (40,y,z).
+# (1,y,z) will store the state of (41,y,z), (42,y,z), ..., (40,y,z), and so on. 
 
 # Number of state values (e.g., BTYPE_AIR, BTYPE_STONE) to be stored per felt in the storage map. 
 # By storing 41 state values per felt, we allocate 3 bits for each state value. 
-# This means we are making use of 123 bits per felt, as opposed to 3. The reason 
+# This means we are making use of 123 bits per felt, as opposed to 3. 
+# The 123-bit limit has to do with restrictions imposed by the `unsigned_div_rem` function. 
 const NUM_STATE_PER_FELT = 41
 const FIRST_3BITS = 7 # ANDing this with a felt yields the first 3 bits of the felt
 
 @external
 func read_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,z) -> (block_state):
     alloc_locals
-    let (q,r) = unsigned_div_rem(z, NUM_STATE_PER_FELT)
+    let (q,r) = unsigned_div_rem(x, NUM_STATE_PER_FELT)
 
-    let (packed_block_state) = state.read(x,y,q)
+    let (packed_block_state) = read_state(q,y,z)
     let (shift) = pow_8(r)
 
     let (left_shifted_state,_) = unsigned_div_rem(packed_block_state, shift)
@@ -199,18 +200,18 @@ end
 func write_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,z, block_type):
     alloc_locals
 
-    let (q,r) = unsigned_div_rem(z, NUM_STATE_PER_FELT)
-    let (packed_block_state) = state.read(x,y,q)
+    let (q,r) = unsigned_div_rem(x, NUM_STATE_PER_FELT)
+    let (packed_block_state) = read_state(q,y,z)
 
     let (pow_r) = pow_8(r)
+    tempvar pow_r_plus1 = pow_r * 8
     let (bits_before) = bitwise_and(packed_block_state, pow_r - 1)
 
-    tempvar pow_r_plus1 = pow_r * 8
 
     let (bits_after_shifted,_) = unsigned_div_rem(packed_block_state, pow_r_plus1)
     tempvar bits_after = bits_after_shifted * pow_r_plus1
 
-    state.write(x,y,q, bits_before + (block_type*pow_r) + bits_after)
+    write_state(q,y,z, bits_before + (block_type*pow_r) + bits_after)
 
     return ()
 end
