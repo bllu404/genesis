@@ -5,13 +5,13 @@ import pytest
 from starkware.starknet.testing.starknet import Starknet
 
 # The path to the contract source code.
-CONTRACT_FILE = os.path.join("contracts", "generator.cairo")
+CONTRACT_FILE = os.path.join("contracts", "game.cairo")
 
 
 # The testing library uses python's asyncio. So the following
 # decorator and the ``async`` keyword are needed.
 @pytest.mark.asyncio
-async def test_terrain_generator():
+async def test_game():
     # Create a new Starknet class that simulates the StarkNet
     # system.
     starknet = await Starknet.empty()
@@ -20,18 +20,11 @@ async def test_terrain_generator():
     contract = await starknet.deploy(
         source=CONTRACT_FILE,
     )
+
     """
-    # Testing generate_block method
-    for i in range(20):
-        block = await contract.generate_block(10,10+i,10).call()
-        print()
-        print(block.result.block_type)
-        print(block.call_info.cairo_usage.n_steps)
-
-
     # Testing get_block method
     for i in range(20):
-        block = await contract.get_block(10,10+i,10).call()
+        block = await contract.get_block(10,10+i,10).invoke()
         print()
         print(block.result.block_type)
         print(block.call_info.cairo_usage.n_steps)
@@ -48,7 +41,8 @@ async def test_terrain_generator():
         print(value.result.block_state)
         assert(value.result.block_state == i % 8)
     """
+    
     write = await contract.write_state(1,1,1, 1).invoke()
     read = await contract.read_state(1,1,1).invoke()
     print(f"Write steps: {write.call_info.cairo_usage.n_steps}")
-    print(f"Write steps: {read.call_info.cairo_usage.n_steps}")
+    print(f"Read steps: {read.call_info.cairo_usage.n_steps}")
