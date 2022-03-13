@@ -3,6 +3,7 @@
 from starkware.cairo.common.cairo_builtins import HashBuiltin, BitwiseBuiltin
 from starkware.cairo.common.bitwise import bitwise_and
 from starkware.cairo.common.math_cmp import is_le
+from starkware.cairo.common.hash import hash2
 from contracts.perlin_noise import noise_custom
 
 from contracts.block_types import (
@@ -71,7 +72,7 @@ func generate_block{pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, 
         end
 
         # Computing how deep the soil goes before stone is reached
-        let (soil_displacement_noise) = noise_custom((x,y), SOIL_SCALE, 12345)
+        let (soil_displacement_noise) = noise_custom((x,y), TOPSOIL_SCALE, 12345)
         let (soil_depth) = Math64x61_toFelt(TOPSOIL_BASELINE + TOPSOIL_AMPLITUDE*soil_displacement_noise)
 
         let (is_in_soil) = is_le(surface_height - soil_depth, z)
@@ -101,3 +102,4 @@ func get_rand_num{pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*}(x,
     # bit-representation of 127 is 00...01111111, therefore ANDing with a hash yields the first 7 bits of the hash
     let (rand_num) = bitwise_and(final_hash, 7) 
     return (rand_num)
+end
