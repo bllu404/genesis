@@ -19,9 +19,15 @@ async def test_terrain_generator():
     contract = await starknet.deploy(
         source=CONTRACT_FILE,
     )
+    '''
     # Testing generate_block method
     for i in range(20):
         block = await contract.generate_block(10,10+i,10).invoke()
         print()
         print(block.result.block_type)
         print(block.call_info.cairo_usage.n_steps)
+    '''
+
+    block = await contract.generate_block(10,10,100).invoke()
+    print(block.result.block_type)
+    print(block.call_info.cairo_usage.n_steps)
