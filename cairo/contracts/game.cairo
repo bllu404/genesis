@@ -19,9 +19,20 @@ from contracts.block_types import (
     BTYPE_LEAF
 )
 
-# Stone block balance of each user
 @storage_var
-func stone_blocks_balance(user) -> (numBlocks):
+func stone_balance(user) -> (numBlocks):
+end
+
+@storage_var
+func dirt_balance(user) -> (numBlocks):
+end
+
+@storage_var
+func grass_balance(user) -> (numBlocks):
+end
+
+@storage_var
+func ore_balance(user) -> (numBlocks):
 end
 
 
@@ -48,8 +59,8 @@ func mine_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : 
     let (block_state) = get_block(x,y,z)
 
     if block_state == BTYPE_STONE:
-        let (balance) = stone_blocks_balance.read(user)
-        stone_blocks_balance.write(user, balance + 1)
+        let (balance) = stone_balance.read(user)
+        stone_balance.write(user, balance + 1)
 
         # Rebinding all implicit pointers
         tempvar syscall_ptr : felt* = syscall_ptr
@@ -57,11 +68,45 @@ func mine_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : 
         tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
         tempvar range_check_ptr = range_check_ptr
     else:
-        tempvar syscall_ptr : felt* = syscall_ptr
-        tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
-        tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
-        tempvar range_check_ptr = range_check_ptr
+        if block_state == BTYPE_DIRT:
+            let (balance) = dirt_balance.read(user)
+            dirt_balance.write(user, balance + 1)
+
+            # Rebinding all implicit pointers
+            tempvar syscall_ptr : felt* = syscall_ptr
+            tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+            tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+            tempvar range_check_ptr = range_check_ptr
+        else:
+            if block_state == BTYPE_GRASS:
+                let (balance) = grass_balance.read(user)
+                grass_balance.write(user, balance + 1)
+
+                # Rebinding all implicit pointers
+                tempvar syscall_ptr : felt* = syscall_ptr
+                tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+                tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+                tempvar range_check_ptr = range_check_ptr
+            else:
+                if block_state == BTYPE_ORE:
+                    let (balance) = ore_balance.read(user)
+                    ore_balance.write(user, balance + 1)
+
+                    # Rebinding all implicit pointers
+                    tempvar syscall_ptr : felt* = syscall_ptr
+                    tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+                    tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+                    tempvar range_check_ptr = range_check_ptr
+                else:
+                    tempvar syscall_ptr : felt* = syscall_ptr
+                    tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+                    tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+                    tempvar range_check_ptr = range_check_ptr
+                end 
+            end 
+        end 
     end 
+
 
     write_state(x,y,z, BTYPE_AIR) # Setting the state of the block to "air" since it was just mined
     block_updated.emit(x,y,z, BTYPE_AIR)
@@ -69,7 +114,7 @@ func mine_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : 
 end
 
 @external 
-func place_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(x,y,z):
+func place_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(x,y,z, block_type):
     alloc_locals 
 
     let (user) = get_caller_address() 
@@ -77,17 +122,68 @@ func place_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr :
     let (block_state) = get_block(x,y,z)
 
     if block_state == BTYPE_AIR:
-        let (user_balance) = stone_blocks_balance.read(user)
-        assert_le(1, user_balance)
-        write_state(x,y,z, BTYPE_STONE)
-        stone_blocks_balance.write(user, user_balance - 1)
-        block_updated.emit(x,y,z, BTYPE_STONE)
+        if block_type == BTYPE_STONE:
+            let (user_balance) = stone_balance.read(user)
+            assert_le(1, user_balance)
+            write_state(x,y,z, BTYPE_STONE)
+            stone_balance.write(user, user_balance - 1)
+            block_updated.emit(x,y,z, BTYPE_STONE)
+
+            # Rebinding all implicit pointers
+            tempvar syscall_ptr : felt* = syscall_ptr
+            tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+            tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+            tempvar range_check_ptr = range_check_ptr
         
-        # Rebinding all implicit pointers
-        tempvar syscall_ptr : felt* = syscall_ptr
-        tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
-        tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
-        tempvar range_check_ptr = range_check_ptr
+        else:
+            if block_type == BTYPE_DIRT:
+                let (user_balance) = dirt_balance.read(user)
+                assert_le(1, user_balance)
+                write_state(x,y,z, BTYPE_DIRT)
+                dirt_balance.write(user, user_balance - 1)
+                block_updated.emit(x,y,z, BTYPE_DIRT)
+
+                # Rebinding all implicit pointers
+                tempvar syscall_ptr : felt* = syscall_ptr
+                tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+                tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+                tempvar range_check_ptr = range_check_ptr
+            else:
+                if block_type == BTYPE_GRASS:
+                    let (user_balance) = grass_balance.read(user)
+                    assert_le(1, user_balance)
+                    write_state(x,y,z, BTYPE_GRASS)
+                    grass_balance.write(user, user_balance - 1)
+                    block_updated.emit(x,y,z, BTYPE_GRASS)
+
+                    # Rebinding all implicit pointers
+                    tempvar syscall_ptr : felt* = syscall_ptr
+                    tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+                    tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+                    tempvar range_check_ptr = range_check_ptr
+                else:
+                    if block_type == BTYPE_ORE:
+                        let (user_balance) = ore_balance.read(user)
+                        assert_le(1, user_balance)
+                        write_state(x,y,z, BTYPE_ORE)
+                        ore_balance.write(user, user_balance - 1)
+                        block_updated.emit(x,y,z, BTYPE_ORE)
+
+                        # Rebinding all implicit pointers
+                        tempvar syscall_ptr : felt* = syscall_ptr
+                        tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+                        tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+                        tempvar range_check_ptr = range_check_ptr
+                    else:
+                        # Rebinding all implicit pointers
+                        tempvar syscall_ptr : felt* = syscall_ptr
+                        tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+                        tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+                        tempvar range_check_ptr = range_check_ptr
+                    end
+                end
+            end
+        end
     else:
         tempvar syscall_ptr : felt* = syscall_ptr
         tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr

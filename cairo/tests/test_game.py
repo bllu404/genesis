@@ -8,8 +8,16 @@ from starkware.starknet.testing.starknet import Starknet
 CONTRACT_FILE = os.path.join("contracts", "game.cairo")
 
 
-# The testing library uses python's asyncio. So the following
-# decorator and the ``async`` keyword are needed.
+block_types = {
+    0 : "Uninitialized",
+    1 : "Air",
+    2 : "Stone",
+    3 : "Dirt",
+    4 : "Grass",
+    5 : "Ore",
+    6 : "Wood",
+    7 : "Leaf"
+}
 @pytest.mark.asyncio
 async def test_game():
     # Create a new Starknet class that simulates the StarkNet
@@ -42,7 +50,11 @@ async def test_game():
         assert(value.result.block_state == i % 8)
     """
     
-    write = await contract.write_state(1,1,1, 1).invoke()
-    read = await contract.read_state(1,1,1).invoke()
-    print(f"Write steps: {write.call_info.cairo_usage.n_steps}")
-    print(f"Read steps: {read.call_info.cairo_usage.n_steps}")
+    block = await contract.get_block(1,1,1).invoke()
+    mine = await contract.mine_block(1,1,1).invoke()
+    block2 = await contract.get_block(1,1,1).invoke()
+    place = await contract.place_block(1,1,1, 2).invoke()
+    block3 = await contract.get_block(1,1,1).invoke()
+    print(block_types[block.result.block_type])
+    print(block_types[block2.result.block_type])
+    print(block_types[block3.result.block_type])
