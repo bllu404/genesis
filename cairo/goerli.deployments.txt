@@ -1,0 +1,1 @@
+0x04812a8f088cb13c79235a56db3573322584c7cdb8476e93bf46b6bd5a67c69f:artifacts/abis/game.json

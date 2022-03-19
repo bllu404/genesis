@@ -233,7 +233,6 @@ end
 const NUM_STATE_PER_FELT = 41
 const FIRST_3BITS = 7 # ANDing this with a felt yields the first 3 bits of the felt
 
-@external
 func read_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,z) -> (block_state):
     alloc_locals
     let (q,r) = unsigned_div_rem(x, NUM_STATE_PER_FELT)
@@ -247,7 +246,6 @@ func read_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_pt
 end 
 
 # block_type must be 8 bits or less in size. The result will be unexpected otherwise.
-@external
 func write_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,z, block_type):
     alloc_locals
 

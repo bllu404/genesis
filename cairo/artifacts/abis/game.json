@@ -1,0 +1,164 @@
+[
+    {
+        "inputs": [
+            {
+                "name": "x",
+                "type": "felt"
+            },
+            {
+                "name": "y",
+                "type": "felt"
+            },
+            {
+                "name": "z",
+                "type": "felt"
+            }
+        ],
+        "name": "generate_block",
+        "outputs": [
+            {
+                "name": "block_type",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "data": [
+            {
+                "name": "x",
+                "type": "felt"
+            },
+            {
+                "name": "y",
+                "type": "felt"
+            },
+            {
+                "name": "z",
+                "type": "felt"
+            },
+            {
+                "name": "block_type",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "block_updated",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "name": "x",
+                "type": "felt"
+            },
+            {
+                "name": "y",
+                "type": "felt"
+            },
+            {
+                "name": "z",
+                "type": "felt"
+            }
+        ],
+        "name": "mine_block",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "x",
+                "type": "felt"
+            },
+            {
+                "name": "y",
+                "type": "felt"
+            },
+            {
+                "name": "z",
+                "type": "felt"
+            },
+            {
+                "name": "block_type",
+                "type": "felt"
+            }
+        ],
+        "name": "place_block",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "x",
+                "type": "felt"
+            },
+            {
+                "name": "y",
+                "type": "felt"
+            },
+            {
+                "name": "z",
+                "type": "felt"
+            }
+        ],
+        "name": "get_block",
+        "outputs": [
+            {
+                "name": "block_type",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "x",
+                "type": "felt"
+            },
+            {
+                "name": "y",
+                "type": "felt"
+            },
+            {
+                "name": "z",
+                "type": "felt"
+            }
+        ],
+        "name": "read_state",
+        "outputs": [
+            {
+                "name": "block_state",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "x",
+                "type": "felt"
+            },
+            {
+                "name": "y",
+                "type": "felt"
+            },
+            {
+                "name": "z",
+                "type": "felt"
+            },
+            {
+                "name": "block_type",
+                "type": "felt"
+            }
+        ],
+        "name": "write_state",
+        "outputs": [],
+        "type": "function"
+    }
+]
