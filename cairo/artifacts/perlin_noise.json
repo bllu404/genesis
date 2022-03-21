@@ -572,7 +572,7 @@
                         "end_col": 19,
                         "end_line": 14,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/hash.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
                         },
                         "start_col": 5,
                         "start_line": 14
@@ -599,7 +599,7 @@
                         "end_col": 19,
                         "end_line": 15,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/hash.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
                         },
                         "start_col": 5,
                         "start_line": 15
@@ -627,21 +627,21 @@
                         "end_col": 47,
                         "end_line": 17,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/hash.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 35,
                                 "end_line": 13,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/hash.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 27,
                                         "end_line": 18,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/hash.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 18
@@ -679,14 +679,14 @@
                         "end_col": 33,
                         "end_line": 16,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/hash.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 26,
                                 "end_line": 18,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/hash.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
                                 },
                                 "start_col": 20,
                                 "start_line": 18
@@ -719,7 +719,7 @@
                         "end_col": 27,
                         "end_line": 18,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/hash.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
                         },
                         "start_col": 5,
                         "start_line": 18
@@ -746,7 +746,7 @@
                                 "end_col": 7,
                                 "end_line": 44,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 5,
                                 "start_line": 40
@@ -758,7 +758,7 @@
                         "end_col": 26,
                         "end_line": 45,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 45
@@ -784,21 +784,21 @@
                         "end_col": 46,
                         "end_line": 46,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 39,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 14,
                                         "end_line": 47,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 47
@@ -834,7 +834,7 @@
                         "end_col": 14,
                         "end_line": 47,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 47
@@ -861,21 +861,21 @@
                         "end_col": 31,
                         "end_line": 51,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 39,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 21,
                                         "end_line": 52,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 52
@@ -912,7 +912,7 @@
                         "end_col": 20,
                         "end_line": 52,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 15,
                         "start_line": 52
@@ -939,7 +939,7 @@
                         "end_col": 21,
                         "end_line": 52,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 52
@@ -966,7 +966,7 @@
                         "end_col": 14,
                         "end_line": 53,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 53
@@ -990,12 +990,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 31,
-                        "end_line": 204,
+                        "end_line": 210,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
-                        "start_line": 204
+                        "start_line": 210
                     }
                 },
                 "17": {
@@ -1018,24 +1018,24 @@
                         {
                             "location": {
                                 "end_col": 7,
-                                "end_line": 209,
+                                "end_line": 215,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 5,
-                                "start_line": 205
+                                "start_line": 211
                             },
                             "n_prefix_newlines": 1
                         }
                     ],
                     "inst": {
                         "end_col": 7,
-                        "end_line": 210,
+                        "end_line": 216,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
-                        "start_line": 210
+                        "start_line": 216
                     }
                 },
                 "19": {
@@ -1057,12 +1057,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 58,
-                        "end_line": 211,
+                        "end_line": 217,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 39,
-                        "start_line": 211
+                        "start_line": 217
                     }
                 },
                 "21": {
@@ -1085,12 +1085,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 41,
-                        "end_line": 212,
+                        "end_line": 218,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 29,
-                        "start_line": 212
+                        "start_line": 218
                     }
                 },
                 "23": {
@@ -1114,12 +1114,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 38,
-                        "end_line": 213,
+                        "end_line": 219,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
-                        "start_line": 213
+                        "start_line": 219
                     }
                 },
                 "24": {
@@ -1143,12 +1143,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 37,
-                        "end_line": 215,
+                        "end_line": 221,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
-                        "start_line": 215
+                        "start_line": 221
                     }
                 },
                 "25": {
@@ -1170,12 +1170,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 34,
-                        "end_line": 217,
+                        "end_line": 223,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
-                        "start_line": 217
+                        "start_line": 223
                     }
                 },
                 "26": {
@@ -1197,36 +1197,36 @@
                     "hints": [],
                     "inst": {
                         "end_col": 50,
-                        "end_line": 218,
+                        "end_line": 224,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
-                                "end_line": 203,
+                                "end_line": 209,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 33,
-                                        "end_line": 219,
+                                        "end_line": 225,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 9,
-                                        "start_line": 219
+                                        "start_line": 225
                                     },
                                     "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                 ],
                                 "start_col": 16,
-                                "start_line": 203
+                                "start_line": 209
                             },
                             "While expanding the reference 'range_check_ptr' in:"
                         ],
                         "start_col": 31,
-                        "start_line": 218
+                        "start_line": 224
                     }
                 },
                 "28": {
@@ -1248,24 +1248,24 @@
                     "hints": [],
                     "inst": {
                         "end_col": 38,
-                        "end_line": 203,
+                        "end_line": 209,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 32,
-                                "end_line": 219,
+                                "end_line": 225,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 27,
-                                "start_line": 219
+                                "start_line": 225
                             },
                             "While expanding the reference 'value' in:"
                         ],
                         "start_col": 33,
-                        "start_line": 203
+                        "start_line": 209
                     }
                 },
                 "29": {
@@ -1287,12 +1287,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 33,
-                        "end_line": 219,
+                        "end_line": 225,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
-                        "start_line": 219
+                        "start_line": 225
                     }
                 },
                 "30": {
@@ -1313,12 +1313,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 7,
-                        "end_line": 226,
+                        "end_line": 232,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
-                        "start_line": 226
+                        "start_line": 232
                     }
                 },
                 "32": {
@@ -1339,36 +1339,36 @@
                     "hints": [],
                     "inst": {
                         "end_col": 26,
-                        "end_line": 225,
+                        "end_line": 231,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 26,
-                                "end_line": 225,
+                                "end_line": 231,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 24,
-                                        "end_line": 227,
+                                        "end_line": 233,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 9,
-                                        "start_line": 227
+                                        "start_line": 233
                                     },
                                     "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                 ],
                                 "start_col": 11,
-                                "start_line": 225
+                                "start_line": 231
                             },
                             "While expanding the reference 'range_check_ptr' in:"
                         ],
                         "start_col": 11,
-                        "start_line": 225
+                        "start_line": 231
                     }
                 },
                 "33": {
@@ -1389,12 +1389,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 23,
-                        "end_line": 227,
+                        "end_line": 233,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 22,
-                        "start_line": 227
+                        "start_line": 233
                     }
                 },
                 "35": {
@@ -1415,12 +1415,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 24,
-                        "end_line": 227,
+                        "end_line": 233,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
-                        "start_line": 227
+                        "start_line": 233
                     }
                 },
                 "36": {
@@ -1441,12 +1441,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 31,
-                        "end_line": 230,
+                        "end_line": 236,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
-                        "start_line": 230
+                        "start_line": 236
                     }
                 },
                 "38": {
@@ -1469,24 +1469,24 @@
                         {
                             "location": {
                                 "end_col": 7,
-                                "end_line": 235,
+                                "end_line": 241,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 5,
-                                "start_line": 231
+                                "start_line": 237
                             },
                             "n_prefix_newlines": 1
                         }
                     ],
                     "inst": {
                         "end_col": 7,
-                        "end_line": 236,
+                        "end_line": 242,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
-                        "start_line": 236
+                        "start_line": 242
                     }
                 },
                 "40": {
@@ -1508,12 +1508,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 48,
-                        "end_line": 237,
+                        "end_line": 243,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 36,
-                        "start_line": 237
+                        "start_line": 243
                     }
                 },
                 "42": {
@@ -1536,12 +1536,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 48,
-                        "end_line": 237,
+                        "end_line": 243,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
-                        "start_line": 237
+                        "start_line": 243
                     }
                 },
                 "43": {
@@ -1564,36 +1564,36 @@
                     "hints": [],
                     "inst": {
                         "end_col": 50,
-                        "end_line": 238,
+                        "end_line": 244,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 26,
-                                "end_line": 225,
+                                "end_line": 231,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 25,
-                                        "end_line": 239,
+                                        "end_line": 245,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 9,
-                                        "start_line": 239
+                                        "start_line": 245
                                     },
                                     "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                 ],
                                 "start_col": 11,
-                                "start_line": 225
+                                "start_line": 231
                             },
                             "While expanding the reference 'range_check_ptr' in:"
                         ],
                         "start_col": 31,
-                        "start_line": 238
+                        "start_line": 244
                     }
                 },
                 "45": {
@@ -1616,12 +1616,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 24,
-                        "end_line": 239,
+                        "end_line": 245,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 22,
-                        "start_line": 239
+                        "start_line": 245
                     }
                 },
                 "47": {
@@ -1644,12 +1644,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 25,
-                        "end_line": 239,
+                        "end_line": 245,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
-                        "start_line": 239
+                        "start_line": 245
                     }
                 },
                 "48": {
@@ -1671,12 +1671,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 34,
-                        "end_line": 241,
+                        "end_line": 247,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
-                        "start_line": 241
+                        "start_line": 247
                     }
                 },
                 "49": {
@@ -1698,36 +1698,36 @@
                     "hints": [],
                     "inst": {
                         "end_col": 50,
-                        "end_line": 242,
+                        "end_line": 248,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 26,
-                                "end_line": 225,
+                                "end_line": 231,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 24,
-                                        "end_line": 243,
+                                        "end_line": 249,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 9,
-                                        "start_line": 243
+                                        "start_line": 249
                                     },
                                     "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                 ],
                                 "start_col": 11,
-                                "start_line": 225
+                                "start_line": 231
                             },
                             "While expanding the reference 'range_check_ptr' in:"
                         ],
                         "start_col": 31,
-                        "start_line": 242
+                        "start_line": 248
                     }
                 },
                 "51": {
@@ -1749,12 +1749,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 23,
-                        "end_line": 243,
+                        "end_line": 249,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 22,
-                        "start_line": 243
+                        "start_line": 249
                     }
                 },
                 "53": {
@@ -1776,12 +1776,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 24,
-                        "end_line": 243,
+                        "end_line": 249,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
-                        "start_line": 243
+                        "start_line": 249
                     }
                 },
                 "54": {
@@ -1806,38 +1806,38 @@
                         {
                             "location": {
                                 "end_col": 7,
-                                "end_line": 265,
+                                "end_line": 271,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 5,
-                                "start_line": 259
+                                "start_line": 265
                             },
                             "n_prefix_newlines": 1
                         }
                     ],
                     "inst": {
                         "end_col": 46,
-                        "end_line": 258,
+                        "end_line": 264,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 51,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 26,
-                                        "end_line": 266,
+                                        "end_line": 272,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 5,
-                                        "start_line": 266
+                                        "start_line": 272
                                     },
                                     "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                 ],
@@ -1847,7 +1847,7 @@
                             "While expanding the reference 'range_check_ptr' in:"
                         ],
                         "start_col": 27,
-                        "start_line": 258
+                        "start_line": 264
                     }
                 },
                 "56": {
@@ -1871,24 +1871,24 @@
                     "hints": [],
                     "inst": {
                         "end_col": 30,
-                        "end_line": 256,
+                        "end_line": 262,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 16,
-                                "end_line": 266,
+                                "end_line": 272,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 15,
-                                "start_line": 266
+                                "start_line": 272
                             },
                             "While expanding the reference 'r' in:"
                         ],
                         "start_col": 13,
-                        "start_line": 256
+                        "start_line": 262
                     }
                 },
                 "57": {
@@ -1912,12 +1912,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 25,
-                        "end_line": 266,
+                        "end_line": 272,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 18,
-                        "start_line": 266
+                        "start_line": 272
                     }
                 },
                 "59": {
@@ -1941,12 +1941,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 26,
-                        "end_line": 266,
+                        "end_line": 272,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
-                        "start_line": 266
+                        "start_line": 272
                     }
                 },
                 "61": {
@@ -1970,24 +1970,24 @@
                     "hints": [],
                     "inst": {
                         "end_col": 34,
-                        "end_line": 257,
+                        "end_line": 263,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 21,
-                                "end_line": 268,
+                                "end_line": 274,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 20,
-                                "start_line": 268
+                                "start_line": 274
                             },
                             "While expanding the reference 'q' in:"
                         ],
                         "start_col": 13,
-                        "start_line": 257
+                        "start_line": 263
                     }
                 },
                 "62": {
@@ -2012,12 +2012,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 27,
-                        "end_line": 268,
+                        "end_line": 274,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 20,
-                        "start_line": 268
+                        "start_line": 274
                     }
                 },
                 "63": {
@@ -2043,24 +2043,24 @@
                     "hints": [],
                     "inst": {
                         "end_col": 30,
-                        "end_line": 256,
+                        "end_line": 262,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
-                                "end_line": 268,
+                                "end_line": 274,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 30,
-                                "start_line": 268
+                                "start_line": 274
                             },
                             "While expanding the reference 'r' in:"
                         ],
                         "start_col": 13,
-                        "start_line": 256
+                        "start_line": 262
                     }
                 },
                 "64": {
@@ -2087,12 +2087,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 31,
-                        "end_line": 268,
+                        "end_line": 274,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
-                        "start_line": 268
+                        "start_line": 274
                     }
                 },
                 "65": {
@@ -2121,41 +2121,41 @@
                         "end_col": 31,
                         "end_line": 51,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 26,
-                                "end_line": 266,
+                                "end_line": 272,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 38,
-                                        "end_line": 255,
+                                        "end_line": 261,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
                                                 "end_col": 18,
-                                                "end_line": 269,
+                                                "end_line": 275,
                                                 "input_file": {
-                                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                                 },
                                                 "start_col": 5,
-                                                "start_line": 269
+                                                "start_line": 275
                                             },
                                             "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                         ],
                                         "start_col": 23,
-                                        "start_line": 255
+                                        "start_line": 261
                                     },
                                     "While expanding the reference 'range_check_ptr' in:"
                                 ],
                                 "start_col": 5,
-                                "start_line": 266
+                                "start_line": 272
                             },
                             "While trying to update the implicit return value 'range_check_ptr' in:"
                         ],
@@ -2187,24 +2187,24 @@
                     "hints": [],
                     "inst": {
                         "end_col": 34,
-                        "end_line": 257,
+                        "end_line": 263,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 14,
-                                "end_line": 269,
+                                "end_line": 275,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 13,
-                                "start_line": 269
+                                "start_line": 275
                             },
                             "While expanding the reference 'q' in:"
                         ],
                         "start_col": 13,
-                        "start_line": 257
+                        "start_line": 263
                     }
                 },
                 "67": {
@@ -2231,24 +2231,24 @@
                     "hints": [],
                     "inst": {
                         "end_col": 30,
-                        "end_line": 256,
+                        "end_line": 262,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 17,
-                                "end_line": 269,
+                                "end_line": 275,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 16,
-                                "start_line": 269
+                                "start_line": 275
                             },
                             "While expanding the reference 'r' in:"
                         ],
                         "start_col": 13,
-                        "start_line": 256
+                        "start_line": 262
                     }
                 },
                 "68": {
@@ -2275,12 +2275,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 18,
-                        "end_line": 269,
+                        "end_line": 275,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
-                        "start_line": 269
+                        "start_line": 275
                     }
                 },
                 "69": {
@@ -2307,48 +2307,48 @@
                         {
                             "location": {
                                 "end_col": 7,
-                                "end_line": 305,
+                                "end_line": 311,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 5,
-                                "start_line": 287
+                                "start_line": 293
                             },
                             "n_prefix_newlines": 1
                         }
                     ],
                     "inst": {
                         "end_col": 41,
-                        "end_line": 285,
+                        "end_line": 291,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 21,
-                                "end_line": 306,
+                                "end_line": 312,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 21,
-                                        "end_line": 307,
+                                        "end_line": 313,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 20,
-                                        "start_line": 307
+                                        "start_line": 313
                                     },
                                     "While expanding the reference 'q' in:"
                                 ],
                                 "start_col": 13,
-                                "start_line": 306
+                                "start_line": 312
                             },
                             "While expanding the reference 'biased_q' in:"
                         ],
                         "start_col": 20,
-                        "start_line": 285
+                        "start_line": 291
                     }
                 },
                 "70": {
@@ -2375,24 +2375,24 @@
                     "hints": [],
                     "inst": {
                         "end_col": 29,
-                        "end_line": 306,
+                        "end_line": 312,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 21,
-                                "end_line": 307,
+                                "end_line": 313,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 20,
-                                "start_line": 307
+                                "start_line": 313
                             },
                             "While expanding the reference 'q' in:"
                         ],
                         "start_col": 13,
-                        "start_line": 306
+                        "start_line": 312
                     }
                 },
                 "71": {
@@ -2420,12 +2420,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 27,
-                        "end_line": 307,
+                        "end_line": 313,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 20,
-                        "start_line": 307
+                        "start_line": 313
                     }
                 },
                 "72": {
@@ -2454,24 +2454,24 @@
                     "hints": [],
                     "inst": {
                         "end_col": 30,
-                        "end_line": 284,
+                        "end_line": 290,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
-                                "end_line": 307,
+                                "end_line": 313,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 30,
-                                "start_line": 307
+                                "start_line": 313
                             },
                             "While expanding the reference 'r' in:"
                         ],
                         "start_col": 13,
-                        "start_line": 284
+                        "start_line": 290
                     }
                 },
                 "73": {
@@ -2501,12 +2501,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 31,
-                        "end_line": 307,
+                        "end_line": 313,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
-                        "start_line": 307
+                        "start_line": 313
                     }
                 },
                 "74": {
@@ -2536,26 +2536,26 @@
                     "hints": [],
                     "inst": {
                         "end_col": 46,
-                        "end_line": 286,
+                        "end_line": 292,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 51,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 26,
-                                        "end_line": 308,
+                                        "end_line": 314,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 5,
-                                        "start_line": 308
+                                        "start_line": 314
                                     },
                                     "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                 ],
@@ -2565,7 +2565,7 @@
                             "While expanding the reference 'range_check_ptr' in:"
                         ],
                         "start_col": 27,
-                        "start_line": 286
+                        "start_line": 292
                     }
                 },
                 "76": {
@@ -2595,24 +2595,24 @@
                     "hints": [],
                     "inst": {
                         "end_col": 30,
-                        "end_line": 284,
+                        "end_line": 290,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 16,
-                                "end_line": 308,
+                                "end_line": 314,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 15,
-                                "start_line": 308
+                                "start_line": 314
                             },
                             "While expanding the reference 'r' in:"
                         ],
                         "start_col": 13,
-                        "start_line": 284
+                        "start_line": 290
                     }
                 },
                 "77": {
@@ -2642,12 +2642,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 25,
-                        "end_line": 308,
+                        "end_line": 314,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 18,
-                        "start_line": 308
+                        "start_line": 314
                     }
                 },
                 "79": {
@@ -2677,12 +2677,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 26,
-                        "end_line": 308,
+                        "end_line": 314,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
-                        "start_line": 308
+                        "start_line": 314
                     }
                 },
                 "81": {
@@ -2712,12 +2712,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 26,
-                        "end_line": 309,
+                        "end_line": 315,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 25,
-                        "start_line": 309
+                        "start_line": 315
                     }
                 },
                 "83": {
@@ -2748,12 +2748,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 34,
-                        "end_line": 309,
+                        "end_line": 315,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 25,
-                        "start_line": 309
+                        "start_line": 315
                     }
                 },
                 "84": {
@@ -2787,31 +2787,31 @@
                         "end_col": 31,
                         "end_line": 51,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 26,
-                                "end_line": 308,
+                                "end_line": 314,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 31,
                                         "end_line": 51,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
                                                 "end_col": 39,
-                                                "end_line": 309,
+                                                "end_line": 315,
                                                 "input_file": {
-                                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                                 },
                                                 "start_col": 5,
-                                                "start_line": 309
+                                                "start_line": 315
                                             },
                                             "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                         ],
@@ -2821,7 +2821,7 @@
                                     "While expanding the reference 'range_check_ptr' in:"
                                 ],
                                 "start_col": 5,
-                                "start_line": 308
+                                "start_line": 314
                             },
                             "While trying to update the implicit return value 'range_check_ptr' in:"
                         ],
@@ -2858,24 +2858,24 @@
                     "hints": [],
                     "inst": {
                         "end_col": 41,
-                        "end_line": 285,
+                        "end_line": 291,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 23,
-                                "end_line": 309,
+                                "end_line": 315,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 15,
-                                "start_line": 309
+                                "start_line": 315
                             },
                             "While expanding the reference 'biased_q' in:"
                         ],
                         "start_col": 20,
-                        "start_line": 285
+                        "start_line": 291
                     }
                 },
                 "86": {
@@ -2907,12 +2907,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 38,
-                        "end_line": 309,
+                        "end_line": 315,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 25,
-                        "start_line": 309
+                        "start_line": 315
                     }
                 },
                 "88": {
@@ -2944,12 +2944,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 39,
-                        "end_line": 309,
+                        "end_line": 315,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
-                        "start_line": 309
+                        "start_line": 315
                     }
                 },
                 "90": {
@@ -2981,36 +2981,36 @@
                     "hints": [],
                     "inst": {
                         "end_col": 41,
-                        "end_line": 285,
+                        "end_line": 291,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 21,
-                                "end_line": 306,
+                                "end_line": 312,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 14,
-                                        "end_line": 310,
+                                        "end_line": 316,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 13,
-                                        "start_line": 310
+                                        "start_line": 316
                                     },
                                     "While expanding the reference 'q' in:"
                                 ],
                                 "start_col": 13,
-                                "start_line": 306
+                                "start_line": 312
                             },
                             "While expanding the reference 'biased_q' in:"
                         ],
                         "start_col": 20,
-                        "start_line": 285
+                        "start_line": 291
                     }
                 },
                 "91": {
@@ -3045,41 +3045,41 @@
                         "end_col": 31,
                         "end_line": 51,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 39,
-                                "end_line": 309,
+                                "end_line": 315,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 36,
-                                        "end_line": 283,
+                                        "end_line": 289,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
                                                 "end_col": 18,
-                                                "end_line": 310,
+                                                "end_line": 316,
                                                 "input_file": {
-                                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                                 },
                                                 "start_col": 5,
-                                                "start_line": 310
+                                                "start_line": 316
                                             },
                                             "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                         ],
                                         "start_col": 21,
-                                        "start_line": 283
+                                        "start_line": 289
                                     },
                                     "While expanding the reference 'range_check_ptr' in:"
                                 ],
                                 "start_col": 5,
-                                "start_line": 309
+                                "start_line": 315
                             },
                             "While trying to update the implicit return value 'range_check_ptr' in:"
                         ],
@@ -3117,24 +3117,24 @@
                     "hints": [],
                     "inst": {
                         "end_col": 29,
-                        "end_line": 306,
+                        "end_line": 312,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 14,
-                                "end_line": 310,
+                                "end_line": 316,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 13,
-                                "start_line": 310
+                                "start_line": 316
                             },
                             "While expanding the reference 'q' in:"
                         ],
                         "start_col": 13,
-                        "start_line": 306
+                        "start_line": 312
                     }
                 },
                 "93": {
@@ -3167,24 +3167,24 @@
                     "hints": [],
                     "inst": {
                         "end_col": 30,
-                        "end_line": 284,
+                        "end_line": 290,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 17,
-                                "end_line": 310,
+                                "end_line": 316,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 16,
-                                "start_line": 310
+                                "start_line": 316
                             },
                             "While expanding the reference 'r' in:"
                         ],
                         "start_col": 13,
-                        "start_line": 284
+                        "start_line": 290
                     }
                 },
                 "94": {
@@ -3217,12 +3217,12 @@
                     "hints": [],
                     "inst": {
                         "end_col": 18,
-                        "end_line": 310,
+                        "end_line": 316,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
-                        "start_line": 310
+                        "start_line": 316
                     }
                 },
                 "95": {
@@ -3246,7 +3246,7 @@
                         "end_col": 22,
                         "end_line": 37,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/bitwise.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
                         },
                         "start_col": 5,
                         "start_line": 37
@@ -3273,7 +3273,7 @@
                         "end_col": 22,
                         "end_line": 38,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/bitwise.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
                         },
                         "start_col": 5,
                         "start_line": 38
@@ -3303,21 +3303,21 @@
                         "end_col": 56,
                         "end_line": 42,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/bitwise.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 47,
                                 "end_line": 36,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/bitwise.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 29,
                                         "end_line": 43,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/bitwise.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 43
@@ -3357,14 +3357,14 @@
                         "end_col": 38,
                         "end_line": 39,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/bitwise.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 28,
                                 "end_line": 43,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/bitwise.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
                                 },
                                 "start_col": 21,
                                 "start_line": 43
@@ -3399,7 +3399,7 @@
                         "end_col": 29,
                         "end_line": 43,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/bitwise.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
                         },
                         "start_col": 5,
                         "start_line": 43
@@ -3425,21 +3425,21 @@
                         "end_col": 44,
                         "end_line": 23,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 51,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 34,
                                         "end_line": 24,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 24
@@ -3475,14 +3475,14 @@
                         "end_col": 54,
                         "end_line": 23,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 16,
                                 "end_line": 24,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "start_col": 15,
                                 "start_line": 24
@@ -3513,7 +3513,7 @@
                         "end_col": 33,
                         "end_line": 24,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 18,
                         "start_line": 24
@@ -3539,7 +3539,7 @@
                         "end_col": 34,
                         "end_line": 24,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 5,
                         "start_line": 24
@@ -3565,7 +3565,7 @@
                         "end_col": 31,
                         "end_line": 25,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 15,
                         "start_line": 25
@@ -3591,14 +3591,14 @@
                         "end_col": 54,
                         "end_line": 23,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 34,
                                 "end_line": 25,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "start_col": 33,
                                 "start_line": 25
@@ -3629,7 +3629,7 @@
                         "end_col": 35,
                         "end_line": 25,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 5,
                         "start_line": 25
@@ -3655,7 +3655,7 @@
                         "end_col": 14,
                         "end_line": 26,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 5,
                         "start_line": 26
@@ -3681,21 +3681,21 @@
                         "end_col": 41,
                         "end_line": 36,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 51,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 37,
                                         "end_line": 37,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 37
@@ -3731,14 +3731,14 @@
                         "end_col": 51,
                         "end_line": 36,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 16,
                                 "end_line": 37,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "start_col": 15,
                                 "start_line": 37
@@ -3769,7 +3769,7 @@
                         "end_col": 36,
                         "end_line": 37,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 18,
                         "start_line": 37
@@ -3795,7 +3795,7 @@
                         "end_col": 37,
                         "end_line": 37,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 5,
                         "start_line": 37
@@ -3821,7 +3821,7 @@
                         "end_col": 34,
                         "end_line": 38,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 15,
                         "start_line": 38
@@ -3847,14 +3847,14 @@
                         "end_col": 51,
                         "end_line": 36,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 37,
                                 "end_line": 38,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "start_col": 36,
                                 "start_line": 38
@@ -3885,7 +3885,7 @@
                         "end_col": 38,
                         "end_line": 38,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 5,
                         "start_line": 38
@@ -3911,7 +3911,7 @@
                         "end_col": 37,
                         "end_line": 39,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 13,
                         "start_line": 39
@@ -3937,7 +3937,7 @@
                         "end_col": 38,
                         "end_line": 39,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 5,
                         "start_line": 39
@@ -3965,21 +3965,21 @@
                         "end_col": 36,
                         "end_line": 56,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 44,
                                 "end_line": 23,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 31,
                                         "end_line": 58,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 58
@@ -4017,14 +4017,14 @@
                         "end_col": 20,
                         "end_line": 57,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 30,
                                 "end_line": 58,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "start_col": 27,
                                 "start_line": 58
@@ -4057,7 +4057,7 @@
                         "end_col": 31,
                         "end_line": 58,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 5,
                         "start_line": 58
@@ -4085,14 +4085,14 @@
                         "end_col": 20,
                         "end_line": 57,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 16,
                                 "end_line": 59,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "start_col": 13,
                                 "start_line": 59
@@ -4125,7 +4125,7 @@
                         "end_col": 17,
                         "end_line": 59,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 5,
                         "start_line": 59
@@ -4152,7 +4152,7 @@
                         "end_col": 28,
                         "end_line": 79,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 23,
                         "start_line": 79
@@ -4180,21 +4180,21 @@
                         "end_col": 43,
                         "end_line": 78,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 36,
-                                "end_line": 283,
+                                "end_line": 289,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 82,
                                         "end_line": 80,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "start_col": 20,
                                         "start_line": 80
@@ -4202,7 +4202,7 @@
                                     "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                 ],
                                 "start_col": 21,
-                                "start_line": 283
+                                "start_line": 289
                             },
                             "While expanding the reference 'range_check_ptr' in:"
                         ],
@@ -4232,14 +4232,14 @@
                         "end_col": 20,
                         "end_line": 79,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 42,
                                 "end_line": 80,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "start_col": 35,
                                 "start_line": 80
@@ -4272,7 +4272,7 @@
                         "end_col": 64,
                         "end_line": 80,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 44,
                         "start_line": 80
@@ -4300,7 +4300,7 @@
                         "end_col": 81,
                         "end_line": 80,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 66,
                         "start_line": 80
@@ -4328,7 +4328,7 @@
                         "end_col": 82,
                         "end_line": 80,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 20,
                         "start_line": 80
@@ -4355,30 +4355,30 @@
                     "hints": [],
                     "inst": {
                         "end_col": 36,
-                        "end_line": 283,
+                        "end_line": 289,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 82,
                                 "end_line": 80,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 43,
                                         "end_line": 78,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "parent_location": [
                                             {
                                                 "end_col": 17,
                                                 "end_line": 81,
                                                 "input_file": {
-                                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                                 },
                                                 "start_col": 5,
                                                 "start_line": 81
@@ -4396,7 +4396,7 @@
                             "While trying to update the implicit return value 'range_check_ptr' in:"
                         ],
                         "start_col": 21,
-                        "start_line": 283
+                        "start_line": 289
                     }
                 },
                 "143": {
@@ -4422,14 +4422,14 @@
                         "end_col": 13,
                         "end_line": 80,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 16,
                                 "end_line": 81,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "start_col": 13,
                                 "start_line": 81
@@ -4463,7 +4463,7 @@
                         "end_col": 17,
                         "end_line": 81,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 5,
                         "start_line": 81
@@ -4490,7 +4490,7 @@
                         "end_col": 17,
                         "end_line": 98,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 5,
                         "start_line": 98
@@ -4517,21 +4517,21 @@
                         "end_col": 43,
                         "end_line": 97,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
-                                "end_line": 203,
+                                "end_line": 209,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 29,
                                         "end_line": 99,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "start_col": 17,
                                         "start_line": 99
@@ -4539,7 +4539,7 @@
                                     "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                 ],
                                 "start_col": 16,
-                                "start_line": 203
+                                "start_line": 209
                             },
                             "While expanding the reference 'range_check_ptr' in:"
                         ],
@@ -4568,14 +4568,14 @@
                         "end_col": 62,
                         "end_line": 97,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 28,
                                 "end_line": 99,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "start_col": 27,
                                 "start_line": 99
@@ -4607,7 +4607,7 @@
                         "end_col": 29,
                         "end_line": 99,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 17,
                         "start_line": 99
@@ -4635,14 +4635,14 @@
                         "end_col": 13,
                         "end_line": 99,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 13,
                                 "end_line": 99,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "start_col": 10,
                                 "start_line": 99
@@ -4673,30 +4673,30 @@
                     "hints": [],
                     "inst": {
                         "end_col": 31,
-                        "end_line": 203,
+                        "end_line": 209,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 29,
                                 "end_line": 99,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 26,
-                                        "end_line": 225,
+                                        "end_line": 231,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
                                                 "end_col": 29,
                                                 "end_line": 100,
                                                 "input_file": {
-                                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                                 },
                                                 "start_col": 22,
                                                 "start_line": 100
@@ -4704,7 +4704,7 @@
                                             "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                         ],
                                         "start_col": 11,
-                                        "start_line": 225
+                                        "start_line": 231
                                     },
                                     "While expanding the reference 'range_check_ptr' in:"
                                 ],
@@ -4714,7 +4714,7 @@
                             "While trying to update the implicit return value 'range_check_ptr' in:"
                         ],
                         "start_col": 16,
-                        "start_line": 203
+                        "start_line": 209
                     }
                 },
                 "153": {
@@ -4739,14 +4739,14 @@
                         "end_col": 62,
                         "end_line": 97,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 28,
                                 "end_line": 100,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "start_col": 27,
                                 "start_line": 100
@@ -4779,7 +4779,7 @@
                         "end_col": 29,
                         "end_line": 100,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 22,
                         "start_line": 100
@@ -4808,7 +4808,7 @@
                         "end_col": 47,
                         "end_line": 101,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 23,
                         "start_line": 101
@@ -4836,30 +4836,30 @@
                     "hints": [],
                     "inst": {
                         "end_col": 26,
-                        "end_line": 225,
+                        "end_line": 231,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 29,
                                 "end_line": 100,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 36,
-                                        "end_line": 283,
+                                        "end_line": 289,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
                                                 "end_col": 67,
                                                 "end_line": 102,
                                                 "input_file": {
-                                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                                 },
                                                 "start_col": 22,
                                                 "start_line": 102
@@ -4867,7 +4867,7 @@
                                             "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                         ],
                                         "start_col": 21,
-                                        "start_line": 283
+                                        "start_line": 289
                                     },
                                     "While expanding the reference 'range_check_ptr' in:"
                                 ],
@@ -4877,7 +4877,7 @@
                             "While trying to update the implicit return value 'range_check_ptr' in:"
                         ],
                         "start_col": 11,
-                        "start_line": 225
+                        "start_line": 231
                     }
                 },
                 "159": {
@@ -4904,14 +4904,14 @@
                         "end_col": 20,
                         "end_line": 101,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 44,
                                 "end_line": 102,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "start_col": 37,
                                 "start_line": 102
@@ -4946,21 +4946,21 @@
                         "end_col": 13,
                         "end_line": 99,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 13,
                                 "end_line": 99,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 49,
                                         "end_line": 102,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "start_col": 46,
                                         "start_line": 102
@@ -5000,7 +5000,7 @@
                         "end_col": 66,
                         "end_line": 102,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 51,
                         "start_line": 102
@@ -5030,7 +5030,7 @@
                         "end_col": 67,
                         "end_line": 102,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 22,
                         "start_line": 102
@@ -5059,30 +5059,30 @@
                     "hints": [],
                     "inst": {
                         "end_col": 36,
-                        "end_line": 283,
+                        "end_line": 289,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 67,
                                 "end_line": 102,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 43,
                                         "end_line": 97,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "parent_location": [
                                             {
                                                 "end_col": 36,
                                                 "end_line": 103,
                                                 "input_file": {
-                                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                                 },
                                                 "start_col": 5,
                                                 "start_line": 103
@@ -5100,7 +5100,7 @@
                             "While trying to update the implicit return value 'range_check_ptr' in:"
                         ],
                         "start_col": 21,
-                        "start_line": 283
+                        "start_line": 289
                     }
                 },
                 "166": {
@@ -5128,7 +5128,7 @@
                         "end_col": 35,
                         "end_line": 103,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 19,
                         "start_line": 103
@@ -5159,7 +5159,7 @@
                         "end_col": 36,
                         "end_line": 103,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "start_col": 5,
                         "start_line": 103
@@ -5450,7 +5450,7 @@
                                 "end_col": 47,
                                 "end_line": 36,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/bitwise.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -5660,7 +5660,7 @@
                         "end_col": 47,
                         "end_line": 36,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/bitwise.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
                         },
                         "parent_location": [
                             {
@@ -5806,7 +5806,7 @@
                                 "end_col": 43,
                                 "end_line": 78,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -5932,7 +5932,7 @@
                         "end_col": 43,
                         "end_line": 78,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
@@ -5946,7 +5946,7 @@
                                         "end_col": 43,
                                         "end_line": 78,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -6081,7 +6081,7 @@
                         "end_col": 43,
                         "end_line": 78,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
@@ -8124,9 +8124,9 @@
                         "parent_location": [
                             {
                                 "end_col": 38,
-                                "end_line": 255,
+                                "end_line": 261,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -8141,7 +8141,7 @@
                                     "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                 ],
                                 "start_col": 23,
-                                "start_line": 255
+                                "start_line": 261
                             },
                             "While expanding the reference 'range_check_ptr' in:"
                         ],
@@ -8278,9 +8278,9 @@
                     "hints": [],
                     "inst": {
                         "end_col": 38,
-                        "end_line": 255,
+                        "end_line": 261,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
@@ -8292,9 +8292,9 @@
                                 "parent_location": [
                                     {
                                         "end_col": 38,
-                                        "end_line": 255,
+                                        "end_line": 261,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -8309,7 +8309,7 @@
                                             "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                         ],
                                         "start_col": 23,
-                                        "start_line": 255
+                                        "start_line": 261
                                     },
                                     "While expanding the reference 'range_check_ptr' in:"
                                 ],
@@ -8319,7 +8319,7 @@
                             "While trying to update the implicit return value 'range_check_ptr' in:"
                         ],
                         "start_col": 23,
-                        "start_line": 255
+                        "start_line": 261
                     }
                 },
                 "295": {
@@ -8457,9 +8457,9 @@
                     "hints": [],
                     "inst": {
                         "end_col": 38,
-                        "end_line": 255,
+                        "end_line": 261,
                         "input_file": {
-                            "filename": "/home/adar/cairo_venv/lib/python3.7/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
@@ -8498,7 +8498,7 @@
                             "While trying to update the implicit return value 'range_check_ptr' in:"
                         ],
                         "start_col": 23,
-                        "start_line": 255
+                        "start_line": 261
                     }
                 },
                 "300": {
@@ -8812,7 +8812,7 @@
                                 "end_col": 41,
                                 "end_line": 36,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -8908,7 +8908,7 @@
                         "end_col": 41,
                         "end_line": 36,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
@@ -8922,7 +8922,7 @@
                                         "end_col": 41,
                                         "end_line": 36,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -9026,7 +9026,7 @@
                         "end_col": 41,
                         "end_line": 36,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
@@ -9231,7 +9231,7 @@
                                 "end_col": 43,
                                 "end_line": 97,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -9409,7 +9409,7 @@
                         "end_col": 43,
                         "end_line": 97,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
@@ -9423,7 +9423,7 @@
                                         "end_col": 43,
                                         "end_line": 97,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -9570,7 +9570,7 @@
                         "end_col": 43,
                         "end_line": 97,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
@@ -9765,7 +9765,7 @@
                                 "end_col": 43,
                                 "end_line": 78,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -9923,7 +9923,7 @@
                         "end_col": 43,
                         "end_line": 78,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
@@ -10052,7 +10052,7 @@
                                 "end_col": 43,
                                 "end_line": 78,
                                 "input_file": {
-                                    "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -10643,7 +10643,7 @@
                         "end_col": 43,
                         "end_line": 78,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
@@ -10996,7 +10996,7 @@
                                         "end_col": 41,
                                         "end_line": 36,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -11124,7 +11124,7 @@
                         "end_col": 41,
                         "end_line": 36,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
@@ -11770,7 +11770,7 @@
                                         "end_col": 36,
                                         "end_line": 56,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -12005,7 +12005,7 @@
                         "end_col": 36,
                         "end_line": 56,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
@@ -12019,7 +12019,7 @@
                                         "end_col": 36,
                                         "end_line": 56,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -12259,7 +12259,7 @@
                         "end_col": 36,
                         "end_line": 56,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
@@ -12273,7 +12273,7 @@
                                         "end_col": 36,
                                         "end_line": 56,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -14070,7 +14070,7 @@
                         "end_col": 36,
                         "end_line": 56,
                         "input_file": {
-                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                         },
                         "parent_location": [
                             {
@@ -14084,7 +14084,7 @@
                                         "end_col": 36,
                                         "end_line": 56,
                                         "input_file": {
-                                            "filename": "/home/adar/cairo-projects/genesis/cairo/contracts/Math64x61.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/cairo/contracts/Math64x61.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -21533,62 +21533,6 @@
                 ],
                 "type": "reference"
             },
-            "__main__.select_vector._anon_label72": {
-                "pc": 220,
-                "type": "label"
-            },
-            "__main__.select_vector._anon_label73": {
-                "pc": 284,
-                "type": "label"
-            },
-            "__main__.select_vector._anon_label74": {
-                "pc": 230,
-                "type": "label"
-            },
-            "__main__.select_vector._anon_label75": {
-                "pc": 284,
-                "type": "label"
-            },
-            "__main__.select_vector._anon_label76": {
-                "pc": 240,
-                "type": "label"
-            },
-            "__main__.select_vector._anon_label77": {
-                "pc": 284,
-                "type": "label"
-            },
-            "__main__.select_vector._anon_label78": {
-                "pc": 250,
-                "type": "label"
-            },
-            "__main__.select_vector._anon_label79": {
-                "pc": 284,
-                "type": "label"
-            },
-            "__main__.select_vector._anon_label80": {
-                "pc": 260,
-                "type": "label"
-            },
-            "__main__.select_vector._anon_label81": {
-                "pc": 284,
-                "type": "label"
-            },
-            "__main__.select_vector._anon_label82": {
-                "pc": 270,
-                "type": "label"
-            },
-            "__main__.select_vector._anon_label83": {
-                "pc": 284,
-                "type": "label"
-            },
-            "__main__.select_vector._anon_label84": {
-                "pc": 280,
-                "type": "label"
-            },
-            "__main__.select_vector._anon_label85": {
-                "pc": 284,
-                "type": "label"
-            },
             "__main__.select_vector.bitwise_ptr": {
                 "cairo_type": "starkware.cairo.common.cairo_builtins.BitwiseBuiltin*",
                 "full_name": "__main__.select_vector.bitwise_ptr",
@@ -23043,14 +22987,6 @@
                 "type": "const",
                 "value": 0
             },
-            "starkware.cairo.common.math.abs_value._anon_label14": {
-                "pc": 25,
-                "type": "label"
-            },
-            "starkware.cairo.common.math.abs_value._anon_label15": {
-                "pc": 30,
-                "type": "label"
-            },
             "starkware.cairo.common.math.abs_value.abs_value": {
                 "cairo_type": "felt",
                 "full_name": "starkware.cairo.common.math.abs_value.abs_value",
@@ -23367,22 +23303,6 @@
                     }
                 ],
                 "type": "reference"
-            },
-            "starkware.cairo.common.math.sign._anon_label16": {
-                "pc": 36,
-                "type": "label"
-            },
-            "starkware.cairo.common.math.sign._anon_label17": {
-                "pc": 36,
-                "type": "label"
-            },
-            "starkware.cairo.common.math.sign._anon_label18": {
-                "pc": 48,
-                "type": "label"
-            },
-            "starkware.cairo.common.math.sign._anon_label19": {
-                "pc": 54,
-                "type": "label"
             },
             "starkware.cairo.common.math.sign.is_positive": {
                 "cairo_type": "felt",
@@ -23941,6 +23861,14 @@
             },
             "starkware.cairo.common.pow.get_fp_and_pc": {
                 "destination": "starkware.cairo.common.registers.get_fp_and_pc",
+                "type": "alias"
+            },
+            "starkware.cairo.common.registers.get_ap": {
+                "destination": "starkware.cairo.lang.compiler.lib.registers.get_ap",
+                "type": "alias"
+            },
+            "starkware.cairo.common.registers.get_fp_and_pc": {
+                "destination": "starkware.cairo.lang.compiler.lib.registers.get_fp_and_pc",
                 "type": "alias"
             },
             "starkware.cairo.common.uint256.ALL_ONES": {
@@ -24527,6 +24455,10 @@
                         "cairo_type": "felt",
                         "offset": 1
                     },
+                    "chain_id": {
+                        "cairo_type": "felt",
+                        "offset": 6
+                    },
                     "max_fee": {
                         "cairo_type": "felt",
                         "offset": 2
@@ -24539,12 +24471,16 @@
                         "cairo_type": "felt",
                         "offset": 3
                     },
+                    "transaction_hash": {
+                        "cairo_type": "felt",
+                        "offset": 5
+                    },
                     "version": {
                         "cairo_type": "felt",
                         "offset": 0
                     }
                 },
-                "size": 5,
+                "size": 7,
                 "type": "struct"
             }
         },
