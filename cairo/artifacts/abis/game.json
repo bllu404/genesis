@@ -113,52 +113,5 @@
         ],
         "stateMutability": "view",
         "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "x",
-                "type": "felt"
-            },
-            {
-                "name": "y",
-                "type": "felt"
-            },
-            {
-                "name": "z",
-                "type": "felt"
-            }
-        ],
-        "name": "read_state",
-        "outputs": [
-            {
-                "name": "block_state",
-                "type": "felt"
-            }
-        ],
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "x",
-                "type": "felt"
-            },
-            {
-                "name": "y",
-                "type": "felt"
-            },
-            {
-                "name": "z",
-                "type": "felt"
-            },
-            {
-                "name": "block_type",
-                "type": "felt"
-            }
-        ],
-        "name": "write_state",
-        "outputs": [],
-        "type": "function"
     }
 ]
