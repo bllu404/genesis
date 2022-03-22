@@ -4,7 +4,7 @@ from starkware.cairo.common.cairo_builtins import HashBuiltin, BitwiseBuiltin
 from starkware.cairo.common.bitwise import bitwise_and
 from starkware.cairo.common.registers import get_label_location
 from starkware.starknet.common.syscalls import get_caller_address
-from starkware.cairo.common.math import assert_le, unsigned_div_rem
+from starkware.cairo.common.math import assert_le, unsigned_div_rem, assert_not_equal
 
 from contracts.generator import generate_block
 
@@ -89,14 +89,11 @@ func mine_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : 
 
     let (block_state) = get_block(x,y,z)
 
+    # Ensures the block isn't an air block
+    assert_not_equal(block_state, BTYPE_AIR)
+
     # Mine the block
     _mine_block(user=user, block_type=block_state)
-
-    # Rebinding all implicit pointers
-    tempvar syscall_ptr : felt* = syscall_ptr
-    tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
-    tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
-    tempvar range_check_ptr = range_check_ptr
 
     write_state(x,y,z, BTYPE_AIR) # Setting the state of the block to "air" since it was just mined
     block_updated.emit(x,y,z, BTYPE_AIR)
