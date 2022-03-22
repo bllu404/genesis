@@ -51,7 +51,7 @@ async def test_game():
     """
     
     block = await contract.get_block(1,1,1).invoke()
-    mine = await contract.mine_block(1,1,1).invoke()
+    #mine = await contract.mine_block(1,1,1).invoke()
     block2 = await contract.get_block(1,1,1).invoke()
     place = await contract.place_block(1,1,1, 2).invoke()
     block3 = await contract.get_block(1,1,1).invoke()

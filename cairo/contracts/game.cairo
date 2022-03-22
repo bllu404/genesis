@@ -88,10 +88,11 @@ func mine_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : 
     let (user) = get_caller_address()
 
     let (block_state) = get_block(x,y,z)
-
-    # Ensures the block isn't an air block
-    assert_not_equal(block_state, BTYPE_AIR)
-
+    
+    with_attr error_message("Can't mine block as there is no block to mine"):
+        # Ensures the block isn't an air block
+        assert_not_equal(block_state, BTYPE_AIR)
+    end 
     # Mine the block
     _mine_block(user=user, block_type=block_state)
 
@@ -108,12 +109,13 @@ func place_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr :
 
     let (block_state) = get_block(x,y,z)
 
-    # Ensures a player isn't placing a block where there isn't air. 
-    assert block_state = BTYPE_AIR
-
+    with_attr error_message("Can't place block as there is already a block here."):
+        # Ensures a player isn't placing a block where there isn't air. 
+        assert block_state = BTYPE_AIR
+    end
     # Place the block
      _place_block(x,y,z, user, block_type)
-     
+
     return()
 end
 
