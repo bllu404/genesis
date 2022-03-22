@@ -108,23 +108,12 @@ func place_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr :
 
     let (block_state) = get_block(x,y,z)
 
-    if block_state == BTYPE_AIR:
+    # Ensures a player isn't placing a block where there isn't air. 
+    assert block_state = BTYPE_AIR
 
-        # Place the block
-        _place_block(x,y,z, user, block_type)
-
-        # Rebinding all implicit pointers
-        tempvar syscall_ptr : felt* = syscall_ptr
-        tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
-        tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
-        tempvar range_check_ptr = range_check_ptr
-    else:
-        tempvar syscall_ptr : felt* = syscall_ptr
-        tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
-        tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
-        tempvar range_check_ptr = range_check_ptr
-    end
-
+    # Place the block
+     _place_block(x,y,z, user, block_type)
+     
     return()
 end
 
