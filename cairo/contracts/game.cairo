@@ -32,12 +32,29 @@ end
 # Whenever a block is interacted with, this value is updated to one of the block types defined above (not including the uninitialized type)
 
 @storage_var 
-func state(x, y, z) -> (block_type):
+func state(x : felt, y : felt, z : felt) -> (block_type : felt):
 end
 
 # This event should be emitted any time a block is updated (mined or placed)
 @event
-func block_updated(x,y,z, block_type):
+func block_updated(x : felt, y : felt, z : felt, block_type : felt):
+end
+
+
+#### GETTERS ####
+
+# Get a user's block balance for a certain block_type
+@view
+func get_block_balance{
+            syscall_ptr : felt*,
+            pedersen_ptr : HashBuiltin*,
+            range_check_ptr
+        }(
+        user : felt,
+        block_type : felt
+    ) -> (num_blocks : felt):
+    let (num_blocks) = block_balance.read(user, block_type)
+    return (num_blocks)
 end
 
 #### INTERNAL FUNCTIONS ####
@@ -46,14 +63,20 @@ end
 func _mine_block{
             syscall_ptr : felt*,
             pedersen_ptr : HashBuiltin*,
-            range_check_ptr
+            range_check_ptr,
+            bitwise_ptr : BitwiseBuiltin*
         }(
+        x : felt,
+        y : felt,
+        z : felt,
         user : felt,
         block_type : felt
-    ):
+    ) -> (block_type : felt):
     let (balance) = block_balance.read(user, block_type)
     block_balance.write(user, block_type, balance + 1)
-    return ()
+    write_state(x,y,z, BTYPE_AIR) # Setting the state of the block to "air" since it was just mined
+    block_updated.emit(x,y,z, BTYPE_AIR)
+    return (block_type)
 end
 
 
@@ -82,27 +105,51 @@ end
 
 # Reads the initial block state and mines (adds to user balance) it, then converts to an air block
 @external
-func mine_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(x,y,z):
+func mine_block{
+            syscall_ptr : felt*,
+            pedersen_ptr : HashBuiltin*,
+            bitwise_ptr : BitwiseBuiltin*,
+            range_check_ptr
+        }(
+        x : felt,
+        y : felt,
+        z : felt
+    ) -> (block_type : felt):
     alloc_locals
 
     let (user) = get_caller_address()
 
     let (block_state) = get_block(x,y,z)
-    
+
     with_attr error_message("Can't mine block as there is no block to mine"):
         # Ensures the block isn't an air block
         assert_not_equal(block_state, BTYPE_AIR)
     end 
     # Mine the block
-    _mine_block(user=user, block_type=block_state)
+    let (mined_block_type) = _mine_block(
+        x=x,
+        y=y,
+        z=z,
+        user=user,
+        block_type=block_state
+    )
 
-    write_state(x,y,z, BTYPE_AIR) # Setting the state of the block to "air" since it was just mined
-    block_updated.emit(x,y,z, BTYPE_AIR)
-    return()
+    return(block_type=mined_block_type)
 end
 
+
 @external 
-func place_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(x,y,z, block_type):
+func place_block{
+            syscall_ptr : felt*,
+            pedersen_ptr : HashBuiltin*,
+            bitwise_ptr : BitwiseBuiltin*,
+            range_check_ptr
+        }(
+        x : felt,
+        y : felt,
+        z : felt,
+        block_type : felt
+    ):
     alloc_locals 
 
     let (user) = get_caller_address() 
@@ -119,8 +166,18 @@ func place_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr :
     return()
 end
 
+
 @view
-func get_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(x,y,z) -> (block_type):
+func get_block{
+            syscall_ptr : felt*,
+            pedersen_ptr : HashBuiltin*,
+            bitwise_ptr : BitwiseBuiltin*,
+            range_check_ptr
+        }(
+        x : felt,
+        y : felt,
+        z : felt
+    ) -> (block_type : felt):
     alloc_locals
     let (block_state) = read_state(x,y,z)
 
@@ -158,7 +215,16 @@ end
 const NUM_STATE_PER_FELT = 41
 const FIRST_3BITS = 7 # ANDing this with a felt yields the first 3 bits of the felt
 
-func read_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,z) -> (block_state):
+func read_state{
+            syscall_ptr : felt*,
+            pedersen_ptr : HashBuiltin*,
+            range_check_ptr,
+            bitwise_ptr : BitwiseBuiltin*
+        }(
+        x : felt,
+        y : felt,
+        z : felt
+    ) -> (block_state : felt):
     alloc_locals
     let (q,r) = unsigned_div_rem(x, NUM_STATE_PER_FELT)
 
@@ -171,7 +237,17 @@ func read_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_pt
 end 
 
 # block_type must be 8 bits or less in size. The result will be unexpected otherwise.
-func write_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,z, block_type):
+func write_state{
+            syscall_ptr : felt*,
+            pedersen_ptr : HashBuiltin*,
+            range_check_ptr,
+            bitwise_ptr : BitwiseBuiltin*
+        }(
+        x : felt,
+        y : felt,
+        z : felt,
+        block_type : felt
+    ):
     alloc_locals
 
     let (q,r) = unsigned_div_rem(x, NUM_STATE_PER_FELT)
@@ -194,7 +270,7 @@ end
 # x * 8^n is equivalent to x << 3*n
 
 # Returns the nth power of 2^3 = 8, up to 8^41
-func pow_8(n) -> (power):
+func pow_8(n :felt) -> (power : felt):
     let (pows_address) = get_label_location(pows)
     return (power=[pows_address + n])
 
