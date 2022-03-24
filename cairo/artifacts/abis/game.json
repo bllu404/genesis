@@ -50,6 +50,27 @@
     {
         "inputs": [
             {
+                "name": "user",
+                "type": "felt"
+            },
+            {
+                "name": "block_type",
+                "type": "felt"
+            }
+        ],
+        "name": "get_block_balance",
+        "outputs": [
+            {
+                "name": "num_blocks",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
                 "name": "x",
                 "type": "felt"
             },
@@ -63,7 +84,12 @@
             }
         ],
         "name": "mine_block",
-        "outputs": [],
+        "outputs": [
+            {
+                "name": "block_type",
+                "type": "felt"
+            }
+        ],
         "type": "function"
     },
     {
