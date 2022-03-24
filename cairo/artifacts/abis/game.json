@@ -1,5 +1,27 @@
 [
     {
+        "members": [
+            {
+                "name": "x",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "y",
+                "offset": 1,
+                "type": "felt"
+            },
+            {
+                "name": "z",
+                "offset": 2,
+                "type": "felt"
+            }
+        ],
+        "name": "BlockLocation",
+        "size": 3,
+        "type": "struct"
+    },
+    {
         "inputs": [
             {
                 "name": "x",
@@ -27,16 +49,8 @@
     {
         "data": [
             {
-                "name": "x",
-                "type": "felt"
-            },
-            {
-                "name": "y",
-                "type": "felt"
-            },
-            {
-                "name": "z",
-                "type": "felt"
+                "name": "block_location",
+                "type": "BlockLocation"
             },
             {
                 "name": "block_type",
@@ -50,35 +64,45 @@
     {
         "inputs": [
             {
-                "name": "x",
+                "name": "user",
                 "type": "felt"
             },
             {
-                "name": "y",
-                "type": "felt"
-            },
-            {
-                "name": "z",
+                "name": "block_type",
                 "type": "felt"
             }
         ],
-        "name": "mine_block",
-        "outputs": [],
+        "name": "get_block_balance",
+        "outputs": [
+            {
+                "name": "num_blocks",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
         "type": "function"
     },
     {
         "inputs": [
             {
-                "name": "x",
-                "type": "felt"
-            },
+                "name": "block_location",
+                "type": "BlockLocation"
+            }
+        ],
+        "name": "mine_block",
+        "outputs": [
             {
-                "name": "y",
+                "name": "block_type",
                 "type": "felt"
-            },
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [
             {
-                "name": "z",
-                "type": "felt"
+                "name": "block_location",
+                "type": "BlockLocation"
             },
             {
                 "name": "block_type",
@@ -92,16 +116,8 @@
     {
         "inputs": [
             {
-                "name": "x",
-                "type": "felt"
-            },
-            {
-                "name": "y",
-                "type": "felt"
-            },
-            {
-                "name": "z",
-                "type": "felt"
+                "name": "block_location",
+                "type": "BlockLocation"
             }
         ],
         "name": "get_block",

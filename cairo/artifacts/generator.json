@@ -938,7 +938,7 @@
                         "end_col": 19,
                         "end_line": 14,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/hash.cairo"
                         },
                         "start_col": 5,
                         "start_line": 14
@@ -965,7 +965,7 @@
                         "end_col": 19,
                         "end_line": 15,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/hash.cairo"
                         },
                         "start_col": 5,
                         "start_line": 15
@@ -993,21 +993,21 @@
                         "end_col": 47,
                         "end_line": 17,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/hash.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 35,
                                 "end_line": 13,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/hash.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 27,
                                         "end_line": 18,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/hash.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 18
@@ -1045,14 +1045,14 @@
                         "end_col": 33,
                         "end_line": 16,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/hash.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 26,
                                 "end_line": 18,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/hash.cairo"
                                 },
                                 "start_col": 20,
                                 "start_line": 18
@@ -1085,7 +1085,7 @@
                         "end_col": 27,
                         "end_line": 18,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/hash.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/hash.cairo"
                         },
                         "start_col": 5,
                         "start_line": 18
@@ -1112,7 +1112,7 @@
                                 "end_col": 7,
                                 "end_line": 44,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 5,
                                 "start_line": 40
@@ -1124,7 +1124,7 @@
                         "end_col": 26,
                         "end_line": 45,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 45
@@ -1150,21 +1150,21 @@
                         "end_col": 46,
                         "end_line": 46,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 39,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 14,
                                         "end_line": 47,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 47
@@ -1200,7 +1200,7 @@
                         "end_col": 14,
                         "end_line": 47,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 47
@@ -1227,21 +1227,21 @@
                         "end_col": 31,
                         "end_line": 51,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 39,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 21,
                                         "end_line": 52,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 52
@@ -1278,7 +1278,7 @@
                         "end_col": 20,
                         "end_line": 52,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 15,
                         "start_line": 52
@@ -1305,7 +1305,7 @@
                         "end_col": 21,
                         "end_line": 52,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 52
@@ -1332,7 +1332,7 @@
                         "end_col": 14,
                         "end_line": 53,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 53
@@ -1359,21 +1359,21 @@
                         "end_col": 34,
                         "end_line": 68,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 39,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 17,
                                         "end_line": 69,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 69
@@ -1410,14 +1410,14 @@
                         "end_col": 37,
                         "end_line": 68,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 16,
                                 "end_line": 69,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 15,
                                 "start_line": 69
@@ -1449,7 +1449,7 @@
                         "end_col": 17,
                         "end_line": 69,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 69
@@ -1476,14 +1476,14 @@
                         "end_col": 37,
                         "end_line": 68,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 16,
                                 "end_line": 70,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 15,
                                 "start_line": 70
@@ -1515,14 +1515,14 @@
                         "end_col": 40,
                         "end_line": 68,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 19,
                                 "end_line": 70,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 18,
                                 "start_line": 70
@@ -1554,7 +1554,7 @@
                         "end_col": 20,
                         "end_line": 70,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 70
@@ -1581,7 +1581,7 @@
                         "end_col": 14,
                         "end_line": 71,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 71
@@ -1610,7 +1610,7 @@
                                 "end_col": 7,
                                 "end_line": 139,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 5,
                                 "start_line": 132
@@ -1622,14 +1622,14 @@
                         "end_col": 37,
                         "end_line": 129,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 24,
                                 "end_line": 140,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 20,
                                 "start_line": 140
@@ -1663,7 +1663,7 @@
                         "end_col": 37,
                         "end_line": 140,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 20,
                         "start_line": 140
@@ -1693,14 +1693,14 @@
                         "end_col": 32,
                         "end_line": 128,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 43,
                                 "end_line": 140,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 40,
                                 "start_line": 140
@@ -1736,7 +1736,7 @@
                         "end_col": 43,
                         "end_line": 140,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 140
@@ -1767,14 +1767,14 @@
                         "end_col": 37,
                         "end_line": 129,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 12,
                                 "end_line": 141,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 8,
                                 "start_line": 141
@@ -1811,7 +1811,7 @@
                         "end_col": 24,
                         "end_line": 141,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 8,
                         "start_line": 141
@@ -1844,7 +1844,7 @@
                         "end_col": 7,
                         "end_line": 141,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 141
@@ -1877,21 +1877,21 @@
                         "end_col": 46,
                         "end_line": 130,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 51,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 32,
                                         "end_line": 142,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 9,
                                         "start_line": 142
@@ -1934,14 +1934,14 @@
                         "end_col": 32,
                         "end_line": 128,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 22,
                                 "end_line": 142,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 19,
                                 "start_line": 142
@@ -1979,7 +1979,7 @@
                         "end_col": 31,
                         "end_line": 142,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 24,
                         "start_line": 142
@@ -2012,7 +2012,7 @@
                         "end_col": 32,
                         "end_line": 142,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 142
@@ -2045,7 +2045,7 @@
                         "end_col": 7,
                         "end_line": 141,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 141
@@ -2078,21 +2078,21 @@
                         "end_col": 46,
                         "end_line": 130,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 51,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 38,
                                         "end_line": 144,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 9,
                                         "start_line": 144
@@ -2135,14 +2135,14 @@
                         "end_col": 37,
                         "end_line": 129,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 23,
                                 "end_line": 144,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 19,
                                 "start_line": 144
@@ -2180,7 +2180,7 @@
                         "end_col": 37,
                         "end_line": 144,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 25,
                         "start_line": 144
@@ -2213,7 +2213,7 @@
                         "end_col": 38,
                         "end_line": 144,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 144
@@ -2246,14 +2246,14 @@
                         "end_col": 37,
                         "end_line": 129,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 22,
                                 "end_line": 146,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 18,
                                 "start_line": 146
@@ -2291,14 +2291,14 @@
                         "end_col": 32,
                         "end_line": 128,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 146,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 28,
                                 "start_line": 146
@@ -2336,7 +2336,7 @@
                         "end_col": 32,
                         "end_line": 146,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 146
@@ -2363,7 +2363,7 @@
                         "end_col": 17,
                         "end_line": 154,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 154
@@ -2392,7 +2392,7 @@
                                 "end_col": 7,
                                 "end_line": 166,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 5,
                                 "start_line": 156
@@ -2404,7 +2404,7 @@
                         "end_col": 7,
                         "end_line": 167,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 167
@@ -2432,7 +2432,7 @@
                         "end_col": 7,
                         "end_line": 167,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 167
@@ -2460,21 +2460,21 @@
                         "end_col": 36,
                         "end_line": 153,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 34,
                                 "end_line": 68,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 27,
                                         "end_line": 168,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 9,
                                         "start_line": 168
@@ -2512,14 +2512,14 @@
                         "end_col": 39,
                         "end_line": 153,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 23,
                                 "end_line": 168,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 22,
                                 "start_line": 168
@@ -2552,14 +2552,14 @@
                         "end_col": 42,
                         "end_line": 153,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 26,
                                 "end_line": 168,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 25,
                                 "start_line": 168
@@ -2592,7 +2592,7 @@
                         "end_col": 27,
                         "end_line": 168,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 168
@@ -2620,7 +2620,7 @@
                         "end_col": 17,
                         "end_line": 169,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 169
@@ -2648,28 +2648,28 @@
                         "end_col": 34,
                         "end_line": 68,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 27,
                                 "end_line": 168,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 36,
                                         "end_line": 153,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
                                                 "end_col": 18,
                                                 "end_line": 170,
                                                 "input_file": {
-                                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                                 },
                                                 "start_col": 9,
                                                 "start_line": 170
@@ -2712,7 +2712,7 @@
                         "end_col": 18,
                         "end_line": 170,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 170
@@ -2740,21 +2740,21 @@
                         "end_col": 36,
                         "end_line": 153,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 32,
                                 "end_line": 122,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 52,
                                         "end_line": 173,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 39,
                                         "start_line": 173
@@ -2792,14 +2792,14 @@
                         "end_col": 39,
                         "end_line": 153,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 51,
                                 "end_line": 173,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 50,
                                 "start_line": 173
@@ -2832,7 +2832,7 @@
                         "end_col": 52,
                         "end_line": 173,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 39,
                         "start_line": 173
@@ -2862,7 +2862,7 @@
                         "end_col": 22,
                         "end_line": 173,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 10,
                         "start_line": 173
@@ -2892,7 +2892,7 @@
                         "end_col": 35,
                         "end_line": 173,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 24,
                         "start_line": 173
@@ -2922,28 +2922,28 @@
                         "end_col": 32,
                         "end_line": 122,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 52,
                                 "end_line": 173,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 32,
                                         "end_line": 122,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
                                                 "end_col": 40,
                                                 "end_line": 174,
                                                 "input_file": {
-                                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                                 },
                                                 "start_col": 27,
                                                 "start_line": 174
@@ -2988,14 +2988,14 @@
                         "end_col": 42,
                         "end_line": 153,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 39,
                                 "end_line": 174,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 38,
                                 "start_line": 174
@@ -3030,7 +3030,7 @@
                         "end_col": 40,
                         "end_line": 174,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 27,
                         "start_line": 174
@@ -3062,7 +3062,7 @@
                         "end_col": 24,
                         "end_line": 176,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 8,
                         "start_line": 176
@@ -3095,7 +3095,7 @@
                         "end_col": 7,
                         "end_line": 176,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 176
@@ -3128,28 +3128,28 @@
                         "end_col": 32,
                         "end_line": 122,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 40,
                                 "end_line": 174,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 31,
                                         "end_line": 51,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
                                                 "end_col": 32,
                                                 "end_line": 177,
                                                 "input_file": {
-                                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                                 },
                                                 "start_col": 9,
                                                 "start_line": 177
@@ -3197,14 +3197,14 @@
                         "end_col": 35,
                         "end_line": 173,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 24,
                                 "end_line": 177,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 19,
                                 "start_line": 177
@@ -3242,14 +3242,14 @@
                         "end_col": 23,
                         "end_line": 174,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 177,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 26,
                                 "start_line": 177
@@ -3287,7 +3287,7 @@
                         "end_col": 32,
                         "end_line": 177,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 177
@@ -3320,7 +3320,7 @@
                         "end_col": 18,
                         "end_line": 178,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 178
@@ -3353,28 +3353,28 @@
                         "end_col": 32,
                         "end_line": 122,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 40,
                                 "end_line": 174,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 31,
                                         "end_line": 51,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
                                                 "end_col": 30,
                                                 "end_line": 180,
                                                 "input_file": {
-                                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                                 },
                                                 "start_col": 5,
                                                 "start_line": 180
@@ -3422,14 +3422,14 @@
                         "end_col": 22,
                         "end_line": 173,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 21,
                                 "end_line": 180,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 15,
                                 "start_line": 180
@@ -3467,14 +3467,14 @@
                         "end_col": 16,
                         "end_line": 174,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 29,
                                 "end_line": 180,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 23,
                                 "start_line": 180
@@ -3512,7 +3512,7 @@
                         "end_col": 30,
                         "end_line": 180,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 180
@@ -3545,7 +3545,7 @@
                         "end_col": 14,
                         "end_line": 181,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 181
@@ -3571,7 +3571,7 @@
                         "end_col": 31,
                         "end_line": 210,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 210
@@ -3599,7 +3599,7 @@
                                 "end_col": 7,
                                 "end_line": 215,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 5,
                                 "start_line": 211
@@ -3611,7 +3611,7 @@
                         "end_col": 7,
                         "end_line": 216,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 216
@@ -3638,7 +3638,7 @@
                         "end_col": 58,
                         "end_line": 217,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 39,
                         "start_line": 217
@@ -3666,7 +3666,7 @@
                         "end_col": 41,
                         "end_line": 218,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 29,
                         "start_line": 218
@@ -3695,7 +3695,7 @@
                         "end_col": 38,
                         "end_line": 219,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 219
@@ -3724,7 +3724,7 @@
                         "end_col": 37,
                         "end_line": 221,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 221
@@ -3751,7 +3751,7 @@
                         "end_col": 34,
                         "end_line": 223,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 223
@@ -3778,21 +3778,21 @@
                         "end_col": 50,
                         "end_line": 224,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 209,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 33,
                                         "end_line": 225,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 9,
                                         "start_line": 225
@@ -3829,14 +3829,14 @@
                         "end_col": 38,
                         "end_line": 209,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 32,
                                 "end_line": 225,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 27,
                                 "start_line": 225
@@ -3868,7 +3868,7 @@
                         "end_col": 33,
                         "end_line": 225,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 225
@@ -3894,7 +3894,7 @@
                         "end_col": 7,
                         "end_line": 232,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 232
@@ -3920,21 +3920,21 @@
                         "end_col": 26,
                         "end_line": 231,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 26,
                                 "end_line": 231,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 24,
                                         "end_line": 233,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 9,
                                         "start_line": 233
@@ -3970,7 +3970,7 @@
                         "end_col": 23,
                         "end_line": 233,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 22,
                         "start_line": 233
@@ -3996,7 +3996,7 @@
                         "end_col": 24,
                         "end_line": 233,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 233
@@ -4022,7 +4022,7 @@
                         "end_col": 31,
                         "end_line": 236,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 236
@@ -4050,7 +4050,7 @@
                                 "end_col": 7,
                                 "end_line": 241,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 5,
                                 "start_line": 237
@@ -4062,7 +4062,7 @@
                         "end_col": 7,
                         "end_line": 242,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 242
@@ -4089,7 +4089,7 @@
                         "end_col": 48,
                         "end_line": 243,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 36,
                         "start_line": 243
@@ -4117,7 +4117,7 @@
                         "end_col": 48,
                         "end_line": 243,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 243
@@ -4145,21 +4145,21 @@
                         "end_col": 50,
                         "end_line": 244,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 26,
                                 "end_line": 231,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 25,
                                         "end_line": 245,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 9,
                                         "start_line": 245
@@ -4197,7 +4197,7 @@
                         "end_col": 24,
                         "end_line": 245,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 22,
                         "start_line": 245
@@ -4225,7 +4225,7 @@
                         "end_col": 25,
                         "end_line": 245,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 245
@@ -4252,7 +4252,7 @@
                         "end_col": 34,
                         "end_line": 247,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 247
@@ -4279,21 +4279,21 @@
                         "end_col": 50,
                         "end_line": 248,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 26,
                                 "end_line": 231,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 24,
                                         "end_line": 249,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 9,
                                         "start_line": 249
@@ -4330,7 +4330,7 @@
                         "end_col": 23,
                         "end_line": 249,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 22,
                         "start_line": 249
@@ -4357,7 +4357,7 @@
                         "end_col": 24,
                         "end_line": 249,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 9,
                         "start_line": 249
@@ -4387,7 +4387,7 @@
                                 "end_col": 7,
                                 "end_line": 271,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 5,
                                 "start_line": 265
@@ -4399,21 +4399,21 @@
                         "end_col": 46,
                         "end_line": 264,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 51,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 26,
                                         "end_line": 272,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 272
@@ -4452,14 +4452,14 @@
                         "end_col": 30,
                         "end_line": 262,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 16,
                                 "end_line": 272,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 15,
                                 "start_line": 272
@@ -4493,7 +4493,7 @@
                         "end_col": 25,
                         "end_line": 272,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 18,
                         "start_line": 272
@@ -4522,7 +4522,7 @@
                         "end_col": 26,
                         "end_line": 272,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 272
@@ -4551,14 +4551,14 @@
                         "end_col": 34,
                         "end_line": 263,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 21,
                                 "end_line": 274,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 20,
                                 "start_line": 274
@@ -4593,7 +4593,7 @@
                         "end_col": 27,
                         "end_line": 274,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 20,
                         "start_line": 274
@@ -4624,14 +4624,14 @@
                         "end_col": 30,
                         "end_line": 262,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 274,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 30,
                                 "start_line": 274
@@ -4668,7 +4668,7 @@
                         "end_col": 31,
                         "end_line": 274,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 274
@@ -4700,28 +4700,28 @@
                         "end_col": 31,
                         "end_line": 51,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 26,
                                 "end_line": 272,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 38,
                                         "end_line": 261,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
                                                 "end_col": 18,
                                                 "end_line": 275,
                                                 "input_file": {
-                                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                                 },
                                                 "start_col": 5,
                                                 "start_line": 275
@@ -4768,14 +4768,14 @@
                         "end_col": 34,
                         "end_line": 263,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 14,
                                 "end_line": 275,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 13,
                                 "start_line": 275
@@ -4812,14 +4812,14 @@
                         "end_col": 30,
                         "end_line": 262,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 17,
                                 "end_line": 275,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 16,
                                 "start_line": 275
@@ -4856,7 +4856,7 @@
                         "end_col": 18,
                         "end_line": 275,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 275
@@ -4888,7 +4888,7 @@
                                 "end_col": 7,
                                 "end_line": 311,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 5,
                                 "start_line": 293
@@ -4900,21 +4900,21 @@
                         "end_col": 41,
                         "end_line": 291,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 21,
                                 "end_line": 312,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 21,
                                         "end_line": 313,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 20,
                                         "start_line": 313
@@ -4956,14 +4956,14 @@
                         "end_col": 29,
                         "end_line": 312,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 21,
                                 "end_line": 313,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 20,
                                 "start_line": 313
@@ -5001,7 +5001,7 @@
                         "end_col": 27,
                         "end_line": 313,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 20,
                         "start_line": 313
@@ -5035,14 +5035,14 @@
                         "end_col": 30,
                         "end_line": 290,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 313,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 30,
                                 "start_line": 313
@@ -5082,7 +5082,7 @@
                         "end_col": 31,
                         "end_line": 313,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 313
@@ -5117,21 +5117,21 @@
                         "end_col": 46,
                         "end_line": 292,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 51,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 26,
                                         "end_line": 314,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 314
@@ -5176,14 +5176,14 @@
                         "end_col": 30,
                         "end_line": 290,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 16,
                                 "end_line": 314,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 15,
                                 "start_line": 314
@@ -5223,7 +5223,7 @@
                         "end_col": 25,
                         "end_line": 314,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 18,
                         "start_line": 314
@@ -5258,7 +5258,7 @@
                         "end_col": 26,
                         "end_line": 314,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 314
@@ -5293,7 +5293,7 @@
                         "end_col": 26,
                         "end_line": 315,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 25,
                         "start_line": 315
@@ -5329,7 +5329,7 @@
                         "end_col": 34,
                         "end_line": 315,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 25,
                         "start_line": 315
@@ -5366,28 +5366,28 @@
                         "end_col": 31,
                         "end_line": 51,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 26,
                                 "end_line": 314,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 31,
                                         "end_line": 51,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
                                                 "end_col": 39,
                                                 "end_line": 315,
                                                 "input_file": {
-                                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                                 },
                                                 "start_col": 5,
                                                 "start_line": 315
@@ -5439,14 +5439,14 @@
                         "end_col": 41,
                         "end_line": 291,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 23,
                                 "end_line": 315,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 15,
                                 "start_line": 315
@@ -5488,7 +5488,7 @@
                         "end_col": 38,
                         "end_line": 315,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 25,
                         "start_line": 315
@@ -5525,7 +5525,7 @@
                         "end_col": 39,
                         "end_line": 315,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 315
@@ -5562,21 +5562,21 @@
                         "end_col": 41,
                         "end_line": 291,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 21,
                                 "end_line": 312,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 14,
                                         "end_line": 316,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "start_col": 13,
                                         "start_line": 316
@@ -5624,28 +5624,28 @@
                         "end_col": 31,
                         "end_line": 51,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 39,
                                 "end_line": 315,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 36,
                                         "end_line": 289,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
                                                 "end_col": 18,
                                                 "end_line": 316,
                                                 "input_file": {
-                                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                                 },
                                                 "start_col": 5,
                                                 "start_line": 316
@@ -5698,14 +5698,14 @@
                         "end_col": 29,
                         "end_line": 312,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 14,
                                 "end_line": 316,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 13,
                                 "start_line": 316
@@ -5748,14 +5748,14 @@
                         "end_col": 30,
                         "end_line": 290,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 17,
                                 "end_line": 316,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "start_col": 16,
                                 "start_line": 316
@@ -5798,7 +5798,7 @@
                         "end_col": 18,
                         "end_line": 316,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "start_col": 5,
                         "start_line": 316
@@ -5825,7 +5825,7 @@
                         "end_col": 22,
                         "end_line": 37,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/bitwise.cairo"
                         },
                         "start_col": 5,
                         "start_line": 37
@@ -5852,7 +5852,7 @@
                         "end_col": 22,
                         "end_line": 38,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/bitwise.cairo"
                         },
                         "start_col": 5,
                         "start_line": 38
@@ -5882,21 +5882,21 @@
                         "end_col": 56,
                         "end_line": 42,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/bitwise.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 47,
                                 "end_line": 36,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/bitwise.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 29,
                                         "end_line": 43,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/bitwise.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 43
@@ -5936,14 +5936,14 @@
                         "end_col": 38,
                         "end_line": 39,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/bitwise.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 28,
                                 "end_line": 43,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/bitwise.cairo"
                                 },
                                 "start_col": 21,
                                 "start_line": 43
@@ -5978,7 +5978,7 @@
                         "end_col": 29,
                         "end_line": 43,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/bitwise.cairo"
                         },
                         "start_col": 5,
                         "start_line": 43
@@ -6005,7 +6005,7 @@
                                 "end_col": 84,
                                 "end_line": 17,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                 },
                                 "start_col": 5,
                                 "start_line": 17
@@ -6017,7 +6017,7 @@
                         "end_col": 40,
                         "end_line": 18,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 5,
                         "start_line": 18
@@ -6043,7 +6043,7 @@
                         "end_col": 26,
                         "end_line": 19,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 5,
                         "start_line": 19
@@ -6069,21 +6069,21 @@
                         "end_col": 46,
                         "end_line": 20,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 27,
                                 "end_line": 16,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 19,
                                         "end_line": 21,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 21
@@ -6119,7 +6119,7 @@
                         "end_col": 18,
                         "end_line": 21,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 17,
                         "start_line": 21
@@ -6145,7 +6145,7 @@
                         "end_col": 19,
                         "end_line": 21,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 5,
                         "start_line": 21
@@ -6172,7 +6172,7 @@
                                 "end_col": 91,
                                 "end_line": 24,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                 },
                                 "start_col": 5,
                                 "start_line": 24
@@ -6184,7 +6184,7 @@
                         "end_col": 48,
                         "end_line": 25,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 5,
                         "start_line": 25
@@ -6210,7 +6210,7 @@
                         "end_col": 35,
                         "end_line": 26,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 33,
                         "start_line": 26
@@ -6237,7 +6237,7 @@
                         "end_col": 40,
                         "end_line": 26,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 32,
                         "start_line": 26
@@ -6265,7 +6265,7 @@
                         "end_col": 40,
                         "end_line": 26,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 5,
                         "start_line": 26
@@ -6293,21 +6293,21 @@
                         "end_col": 46,
                         "end_line": 27,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 27,
                                 "end_line": 16,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 19,
                                         "end_line": 28,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 28
@@ -6345,7 +6345,7 @@
                         "end_col": 18,
                         "end_line": 28,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 17,
                         "start_line": 28
@@ -6373,7 +6373,7 @@
                         "end_col": 19,
                         "end_line": 28,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 5,
                         "start_line": 28
@@ -6399,21 +6399,21 @@
                         "end_col": 27,
                         "end_line": 16,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 36,
                                 "end_line": 153,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 32,
                                         "end_line": 31,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                         },
                                         "start_col": 5,
                                         "start_line": 31
@@ -6449,7 +6449,7 @@
                         "end_col": 28,
                         "end_line": 31,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 20,
                         "start_line": 31
@@ -6475,14 +6475,14 @@
                         "end_col": 30,
                         "end_line": 16,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 31,
                                 "end_line": 31,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                 },
                                 "start_col": 30,
                                 "start_line": 31
@@ -6513,7 +6513,7 @@
                         "end_col": 32,
                         "end_line": 31,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 5,
                         "start_line": 31
@@ -6539,7 +6539,7 @@
                         "end_col": 18,
                         "end_line": 32,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 17,
                         "start_line": 32
@@ -6565,7 +6565,7 @@
                         "end_col": 19,
                         "end_line": 32,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 5,
                         "start_line": 32
@@ -6592,21 +6592,21 @@
                         "end_col": 27,
                         "end_line": 37,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "parent_location": [
                             {
                                 "end_col": 27,
                                 "end_line": 16,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                 },
                                 "parent_location": [
                                     {
                                         "end_col": 24,
                                         "end_line": 38,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                         },
                                         "start_col": 12,
                                         "start_line": 38
@@ -6643,7 +6643,7 @@
                         "end_col": 23,
                         "end_line": 38,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 18,
                         "start_line": 38
@@ -6670,7 +6670,7 @@
                         "end_col": 24,
                         "end_line": 38,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 12,
                         "start_line": 38
@@ -6697,7 +6697,7 @@
                         "end_col": 24,
                         "end_line": 38,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "start_col": 5,
                         "start_line": 38
@@ -6730,7 +6730,7 @@
                                 "end_col": 31,
                                 "end_line": 51,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -6986,7 +6986,7 @@
                                 "end_col": 36,
                                 "end_line": 289,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -7146,7 +7146,7 @@
                         "end_col": 36,
                         "end_line": 289,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
@@ -7281,7 +7281,7 @@
                                 "end_col": 31,
                                 "end_line": 51,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -7780,7 +7780,7 @@
                                 "end_col": 36,
                                 "end_line": 289,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -7950,7 +7950,7 @@
                         "end_col": 36,
                         "end_line": 289,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
@@ -8117,7 +8117,7 @@
                                 "end_col": 31,
                                 "end_line": 209,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -8268,7 +8268,7 @@
                         "end_col": 31,
                         "end_line": 209,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
@@ -8282,7 +8282,7 @@
                                         "end_col": 26,
                                         "end_line": 231,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -8431,7 +8431,7 @@
                         "end_col": 26,
                         "end_line": 231,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
@@ -8445,7 +8445,7 @@
                                         "end_col": 36,
                                         "end_line": 289,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -8654,7 +8654,7 @@
                         "end_col": 36,
                         "end_line": 289,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
@@ -9043,7 +9043,7 @@
                                 "end_col": 47,
                                 "end_line": 36,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/bitwise.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -9253,7 +9253,7 @@
                         "end_col": 47,
                         "end_line": 36,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/bitwise.cairo"
                         },
                         "parent_location": [
                             {
@@ -11719,7 +11719,7 @@
                                 "end_col": 38,
                                 "end_line": 261,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -11873,7 +11873,7 @@
                         "end_col": 38,
                         "end_line": 261,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
@@ -11887,7 +11887,7 @@
                                         "end_col": 38,
                                         "end_line": 261,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -12052,7 +12052,7 @@
                         "end_col": 38,
                         "end_line": 261,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math.cairo"
                         },
                         "parent_location": [
                             {
@@ -24948,7 +24948,7 @@
                                         "end_col": 27,
                                         "end_line": 37,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -25424,7 +25424,7 @@
                         "end_col": 27,
                         "end_line": 37,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "parent_location": [
                             {
@@ -25885,7 +25885,7 @@
                         "end_col": 27,
                         "end_line": 37,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "parent_location": [
                             {
@@ -26261,7 +26261,7 @@
                         "end_col": 27,
                         "end_line": 37,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "parent_location": [
                             {
@@ -27033,7 +27033,7 @@
                                         "end_col": 27,
                                         "end_line": 37,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -27260,7 +27260,7 @@
                         "end_col": 27,
                         "end_line": 37,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "parent_location": [
                             {
@@ -27274,7 +27274,7 @@
                                         "end_col": 27,
                                         "end_line": 37,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -28067,7 +28067,7 @@
                         "end_col": 27,
                         "end_line": 37,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "parent_location": [
                             {
@@ -28081,7 +28081,7 @@
                                         "end_col": 27,
                                         "end_line": 37,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -28449,7 +28449,7 @@
                         "end_col": 27,
                         "end_line": 37,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "parent_location": [
                             {
@@ -28463,7 +28463,7 @@
                                         "end_col": 27,
                                         "end_line": 37,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -28876,7 +28876,7 @@
                         "end_col": 27,
                         "end_line": 37,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                         },
                         "parent_location": [
                             {
@@ -28890,7 +28890,7 @@
                                         "end_col": 27,
                                         "end_line": 37,
                                         "input_file": {
-                                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/math_cmp.cairo"
+                                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/math_cmp.cairo"
                                         },
                                         "parent_location": [
                                             {
@@ -30952,7 +30952,7 @@
                                 "end_col": 47,
                                 "end_line": 36,
                                 "input_file": {
-                                    "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
+                                    "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/bitwise.cairo"
                                 },
                                 "parent_location": [
                                     {
@@ -31162,7 +31162,7 @@
                         "end_col": 47,
                         "end_line": 36,
                         "input_file": {
-                            "filename": "/Users/fredtupas/Desktop/Cairo/venv/lib/python3.9/site-packages/starkware/cairo/common/bitwise.cairo"
+                            "filename": "/Users/fredtupas/Desktop/Cairo/genesis/venv/lib/python3.8/site-packages/starkware/cairo/common/bitwise.cairo"
                         },
                         "parent_location": [
                             {

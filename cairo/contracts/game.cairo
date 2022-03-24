@@ -19,26 +19,51 @@ from contracts.block_types import (
     BTYPE_LEAF
 )
 
-#### STORAGE VARIABLES ####
-
-# Mapping of user's block balances block_balance[user][block_type] = numBlocks
-@storage_var
-func block_balance(user : felt, block_type : felt) -> (numBlocks : felt):
-end
-
 ##### GAME STATE MAPPING #####
 # Whenever someone breaks or places a block, this mapping is updated to reflect that. 
 # The value (as in key-value pair) of each coordinate is set to zero by default, and thus 0 is considered the uninitialized state.
 # Whenever a block is interacted with, this value is updated to one of the block types defined above (not including the uninitialized type)
 
+#### STRUCTS ####
+struct BlockLocation:
+    member x : felt
+    member y : felt
+    member z : felt
+end
+
+#### STORAGE VARIABLES ####
+
+# Mapping of user's block balances block_balance[user][block_type] = num_blocks
+@storage_var
+func block_balance(user : felt, block_type : felt) -> (num_blocks : felt):
+end
+
 @storage_var 
-func state(x, y, z) -> (block_type):
+func state(block_location : BlockLocation) -> (block_type):
 end
 
 # This event should be emitted any time a block is updated (mined or placed)
 @event
-func block_updated(x,y,z, block_type):
+func block_updated(block_location : BlockLocation, block_type : felt):
 end
+
+
+#### GETTERS ####
+
+# Get a user's block balance for a certain block_type
+@view
+func get_block_balance{
+            syscall_ptr : felt*,
+            pedersen_ptr : HashBuiltin*,
+            range_check_ptr
+        }(
+        user : felt,
+        block_type : felt
+    ) -> (num_blocks : felt):
+    let (num_blocks) = block_balance.read(user, block_type)
+    return (num_blocks)
+end
+
 
 #### INTERNAL FUNCTIONS ####
 
@@ -46,14 +71,18 @@ end
 func _mine_block{
             syscall_ptr : felt*,
             pedersen_ptr : HashBuiltin*,
-            range_check_ptr
+            range_check_ptr,
+            bitwise_ptr : BitwiseBuiltin*
         }(
+        block_location : BlockLocation,
         user : felt,
         block_type : felt
-    ):
+    ) -> (block_type : felt):
     let (balance) = block_balance.read(user, block_type)
     block_balance.write(user, block_type, balance + 1)
-    return ()
+    write_state(block_location, BTYPE_AIR) # Setting the state of the block to "air" since it was just mined
+    block_updated.emit(block_location, BTYPE_AIR)
+    return (block_type)
 end
 
 
@@ -64,67 +93,94 @@ func _place_block{
             range_check_ptr,
             bitwise_ptr : BitwiseBuiltin*
         }(
-        x : felt,
-        y : felt,
-        z : felt,
+        block_location : BlockLocation,
         user : felt,
         block_type : felt
     ):
     alloc_locals
     let (local user_balance) = block_balance.read(user, block_type)
     assert_le(1, user_balance)
-    write_state(x,y,z, block_type)
+    write_state(block_location, block_type)
     block_balance.write(user, block_type, user_balance - 1)
-    block_updated.emit(x,y,z, block_type)
+    block_updated.emit(block_location, block_type)
     return ()    
 end
 
 
 # Reads the initial block state and mines (adds to user balance) it, then converts to an air block
 @external
-func mine_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(x,y,z):
+func mine_block{
+            syscall_ptr : felt*,
+            pedersen_ptr : HashBuiltin*,
+            bitwise_ptr : BitwiseBuiltin*,
+            range_check_ptr
+        }(
+        block_location : BlockLocation
+    ) -> (block_type : felt):
     alloc_locals
 
     let (user) = get_caller_address()
 
-    let (block_state) = get_block(x,y,z)
+    let (block_state) = get_block(block_location)
     
     with_attr error_message("Can't mine block as there is no block to mine"):
         # Ensures the block isn't an air block
         assert_not_equal(block_state, BTYPE_AIR)
     end 
     # Mine the block
-    _mine_block(user=user, block_type=block_state)
+    let (mined_block_type) = _mine_block(
+        block_location=block_location,
+        user=user,
+        block_type=block_state
+    )
 
-    write_state(x,y,z, BTYPE_AIR) # Setting the state of the block to "air" since it was just mined
-    block_updated.emit(x,y,z, BTYPE_AIR)
-    return()
+    return(block_type=mined_block_type)
 end
 
+
 @external 
-func place_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(x,y,z, block_type):
+func place_block{
+            syscall_ptr : felt*,
+            pedersen_ptr : HashBuiltin*,
+            bitwise_ptr : BitwiseBuiltin*,
+            range_check_ptr
+        }(
+        block_location : BlockLocation,
+        block_type : felt
+    ):
     alloc_locals 
 
     let (user) = get_caller_address() 
 
-    let (block_state) = get_block(x,y,z)
+    let (block_state) = get_block(block_location)
 
     with_attr error_message("Can't place block as there is already a block here."):
         # Ensures a player isn't placing a block where there isn't air. 
         assert block_state = BTYPE_AIR
     end
     # Place the block
-     _place_block(x,y,z, user, block_type)
+     _place_block(block_location, user, block_type)
 
     return()
 end
 
+
 @view
-func get_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(x,y,z) -> (block_type):
+func get_block{
+            syscall_ptr : felt*,
+            pedersen_ptr : HashBuiltin*,
+            bitwise_ptr : BitwiseBuiltin*,
+            range_check_ptr
+        }(
+        block_location : BlockLocation
+    ) -> (block_type : felt):
     alloc_locals
-    let (block_state) = read_state(x,y,z)
+    let (block_state) = read_state(block_location)
 
     if block_state == 0:
+        let x = block_location.x
+        let y = block_location.y
+        let z = block_location.z
         let (block_state) = generate_block(x,y,z)
         tempvar syscall_ptr : felt* = syscall_ptr
         tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
@@ -158,11 +214,21 @@ end
 const NUM_STATE_PER_FELT = 41
 const FIRST_3BITS = 7 # ANDing this with a felt yields the first 3 bits of the felt
 
-func read_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,z) -> (block_state):
+func read_state{
+            syscall_ptr : felt*,
+            pedersen_ptr : HashBuiltin*,
+            range_check_ptr,
+            bitwise_ptr : BitwiseBuiltin*
+        }(
+        block_location : BlockLocation
+    ) -> (block_state : felt):
     alloc_locals
+    let x = block_location.x
+    let y = block_location.y
+    let z = block_location.z
     let (q,r) = unsigned_div_rem(x, NUM_STATE_PER_FELT)
-
-    let (packed_block_state) = state.read(q,y,z)
+    tempvar packed_block_location : BlockLocation = BlockLocation(q,y,z)
+    let (packed_block_state) = state.read(packed_block_location)
     let (shift) = pow_8(r)
 
     let (left_shifted_state,_) = unsigned_div_rem(packed_block_state, shift)
@@ -171,11 +237,22 @@ func read_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_pt
 end 
 
 # block_type must be 8 bits or less in size. The result will be unexpected otherwise.
-func write_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(x,y,z, block_type):
+func write_state{
+            syscall_ptr : felt*,
+            pedersen_ptr : HashBuiltin*,
+            range_check_ptr,
+            bitwise_ptr : BitwiseBuiltin*
+        }(
+        block_location : BlockLocation,
+        block_type : felt
+    ):
     alloc_locals
-
+    let x = block_location.x
+    let y = block_location.y
+    let z = block_location.z
     let (q,r) = unsigned_div_rem(x, NUM_STATE_PER_FELT)
-    let (packed_block_state) = state.read(q,y,z)
+    tempvar packed_block_location : BlockLocation = BlockLocation(q,y,z)
+    let (packed_block_state) = state.read(packed_block_location)
 
     let (pow_r) = pow_8(r)
     tempvar pow_r_plus1 = pow_r * 8
@@ -185,7 +262,7 @@ func write_state{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_p
     let (bits_after_shifted,_) = unsigned_div_rem(packed_block_state, pow_r_plus1)
     tempvar bits_after = bits_after_shifted * pow_r_plus1
 
-    state.write(q,y,z, bits_before + pow_r*block_type + bits_after)
+    state.write(packed_block_location, bits_before + pow_r*block_type + bits_after)
 
     return ()
 end
