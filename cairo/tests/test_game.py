@@ -49,7 +49,8 @@ async def test_game():
         print(value.result.block_state)
         assert(value.result.block_state == i % 8)
     """
-    
+    '''
+    print("Basic Game Logic")
     block = await contract.get_block(1,1,1).invoke()
     mine = await contract.mine_block(1,1,1).invoke()
     block2 = await contract.get_block(1,1,1).invoke()
@@ -57,4 +58,11 @@ async def test_game():
     block3 = await contract.get_block(1,1,1).invoke()
     print(block_types[block.result.block_type])
     print(block_types[block2.result.block_type])
-    print(block_types[block3.result.block_type])
+    print(block_types[block3.result.block_type])'''
+
+    print("Getting multiple blocks at once")
+    blocks = await contract.get_blocks(1,1,99, 10).invoke()
+    print(blocks)
+
+
+    

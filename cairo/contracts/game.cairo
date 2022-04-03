@@ -5,6 +5,7 @@ from starkware.cairo.common.bitwise import bitwise_and
 from starkware.cairo.common.registers import get_label_location
 from starkware.starknet.common.syscalls import get_caller_address
 from starkware.cairo.common.math import assert_le, unsigned_div_rem, assert_not_equal
+from starkware.cairo.common.alloc import alloc
 
 from contracts.generator import generate_block
 
@@ -120,7 +121,12 @@ func place_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr :
 end
 
 @view
-func get_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(x,y,z) -> (block_type):
+func get_block{
+    syscall_ptr : felt*, 
+    pedersen_ptr : HashBuiltin*, 
+    bitwise_ptr : BitwiseBuiltin*, 
+    range_check_ptr
+}(x,y,z) -> (block_type):
     alloc_locals
     let (block_state) = read_state(x,y,z)
 
@@ -138,6 +144,46 @@ func get_block{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, bitwise_ptr : B
     end
 
     return (block_type=block_state)
+end
+
+# Returns an array of blocks, starting from (x,y,z) up to (x,y,z + num_blocks - 1)
+@view 
+func get_blocks{
+    syscall_ptr : felt*, 
+    pedersen_ptr : HashBuiltin*, 
+    bitwise_ptr : BitwiseBuiltin*, 
+    range_check_ptr
+} (x,y,z, num_blocks) -> (block_states_len, block_states : felt*):
+    alloc_locals
+    let ( states_arr : felt* ) = alloc()
+    set_arr(states_arr, x,y,z, num_blocks, num_blocks)
+
+    return (block_states_len=num_blocks, block_states=states_arr)
+end
+
+func set_arr{
+    syscall_ptr : felt*, 
+    pedersen_ptr : HashBuiltin*, 
+    bitwise_ptr : BitwiseBuiltin*, 
+    range_check_ptr
+}(states_arr : felt*, x,y,z, blocks_left, total_blocks):
+    if blocks_left != 0:
+        let (block_state) = get_block(x,y,z)
+        assert states_arr[total_blocks - blocks_left] = block_state 
+        set_arr(states_arr, x, y, z + 1, blocks_left - 1, total_blocks)
+
+        tempvar syscall_ptr : felt* = syscall_ptr
+        tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+        tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+        tempvar range_check_ptr = range_check_ptr
+    else: 
+        tempvar syscall_ptr : felt* = syscall_ptr
+        tempvar pedersen_ptr : HashBuiltin* = pedersen_ptr
+        tempvar bitwise_ptr : BitwiseBuiltin* = bitwise_ptr
+        tempvar range_check_ptr = range_check_ptr
+    end
+
+    return ()
 end
 
 
