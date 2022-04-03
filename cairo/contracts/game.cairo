@@ -32,6 +32,7 @@ end
 # The value (as in key-value pair) of each coordinate is set to zero by default, and thus 0 is considered the uninitialized state.
 # Whenever a block is interacted with, this value is updated to one of the block types defined above (not including the uninitialized type)
 
+# 41 block states are packed into 1 felt. See the `read_state` and `write_state` functions below for more info
 @storage_var 
 func state(x : felt, y : felt, z : felt) -> (block_type : felt):
 end

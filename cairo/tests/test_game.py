@@ -33,6 +33,7 @@ async def contract_factory():
 
 @pytest.mark.asyncio
 async def test_mine_block(contract_factory):
+    print("Test mining blocks")
     contract = contract_factory
 
     test_block_location = (1,1,1)
@@ -61,6 +62,7 @@ async def test_mine_block(contract_factory):
 
 @pytest.mark.asyncio
 async def test_place_block(contract_factory):
+    print("Test placing blocks")
     contract = contract_factory
 
     test_block_location = (1,1,2)
@@ -86,22 +88,14 @@ async def test_place_block(contract_factory):
 
 @pytest.mark.asyncio
 async def test_get_blocks(contract_factory):
-    contract = contract_factory
+    print("test getting blocks")
 
-    '''
-    print("Basic Game Logic")
-    block = await contract.get_block(1,1,1).invoke()
-    mine = await contract.mine_block(1,1,1).invoke()
-    block2 = await contract.get_block(1,1,1).invoke()
-    place = await contract.place_block(1,1,1, 2).invoke()
-    block3 = await contract.get_block(1,1,1).invoke()
-    print(block_types[block.result.block_type])
-    print(block_types[block2.result.block_type])
-    print(block_types[block3.result.block_type])'''
+    contract = contract_factory
 
     print("Getting multiple blocks at once")
     blocks = await contract.get_blocks(1,1,90, 20).invoke()
-    print(blocks.result.block_states)
+    print(list(map(lambda state: BLOCK_TYPES[state], blocks.result.block_states)))
+
 
 # TO DO
 @pytest.mark.asyncio

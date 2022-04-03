@@ -139,5 +139,38 @@
         ],
         "stateMutability": "view",
         "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "x",
+                "type": "felt"
+            },
+            {
+                "name": "y",
+                "type": "felt"
+            },
+            {
+                "name": "z",
+                "type": "felt"
+            },
+            {
+                "name": "num_blocks",
+                "type": "felt"
+            }
+        ],
+        "name": "get_blocks",
+        "outputs": [
+            {
+                "name": "block_states_len",
+                "type": "felt"
+            },
+            {
+                "name": "block_states",
+                "type": "felt*"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
     }
 ]
