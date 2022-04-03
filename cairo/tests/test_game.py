@@ -61,8 +61,8 @@ async def test_game():
     print(block_types[block3.result.block_type])'''
 
     print("Getting multiple blocks at once")
-    blocks = await contract.get_blocks(1,1,99, 10).invoke()
-    print(blocks)
+    blocks = await contract.get_blocks(1,1,90, 20).invoke()
+    print(blocks.result.block_states)
 
 
     
