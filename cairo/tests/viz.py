@@ -32,6 +32,9 @@ async def contract_factory():
     return contract
 
 
+Y = 1
+Z = 90
+
 @pytest.mark.asyncio
 async def test_create_viz(contract_factory):
     contract = contract_factory
@@ -41,8 +44,8 @@ async def test_create_viz(contract_factory):
 
     BLOCKS_PER_CALL = 20
 
-    for i in range(20):
-        blocks = (await contract.get_blocks(i,1,1, BLOCKS_PER_CALL).invoke()).result.block_states
+    for i in range(10):
+        blocks = (await contract.get_blocks(i,Y,Z, BLOCKS_PER_CALL).invoke()).result.block_states
         print(blocks)
         for j in range(BLOCKS_PER_CALL):
             square = plt.Rectangle((5*i,5*j), 5, 5, fc=colors[blocks[j] - 1])
