@@ -49,9 +49,9 @@ const CAVE_OCTAVE2_W = 691752902764108185  # 0.3
 const CAVE_OCTAVE3_W = 461168601842738790  # 0.2
 
 # Defining the scale of each octave (side-lengths of the grid squares)
-const CAVE_OCTAVE1_S = 300
-const CAVE_OCTAVE2_S = 100
-const CAVE_OCTAVE3_S = 50
+const CAVE_OCTAVE1_S = 20
+const CAVE_OCTAVE2_S = 10
+const CAVE_OCTAVE3_S = 5
 
 # Fractal noise values above this value mean a block is there, otherwise no block is there. 
 const CAVE_THRESHOLD = 115292150460684697 # 0.05
