@@ -95,9 +95,9 @@ func generate_block{pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, 
         if is_in_soil != 0:
             return (block_type=BTYPE_DIRT)
         else:
-            let (noise1) = noise_custom((x, y), CAVE_OCTAVE1_S, 69)
-            let (noise2) = noise_custom((x, y), CAVE_OCTAVE2_S, 420)
-            let (noise3) = noise_custom((x, y), CAVE_OCTAVE3_S, 42069)
+            let (noise1) = noise3D_custom(x,y,z, CAVE_OCTAVE1_S, 69)
+            let (noise2) = noise3D_custom(x,y,z, CAVE_OCTAVE2_S, 420)
+            let (noise3) = noise3D_custom(x,y,z, CAVE_OCTAVE3_S, 42069)
 
             let (octave1) = Math64x61_mul_unsafe(noise1, CAVE_OCTAVE1_W)
             let (octave2) = Math64x61_mul_unsafe(noise2, CAVE_OCTAVE2_W)
