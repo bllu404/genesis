@@ -5,7 +5,7 @@ from starkware.cairo.common.bitwise import bitwise_and
 from starkware.cairo.common.math_cmp import is_le
 from starkware.cairo.common.hash import hash2
 from contracts.perlin_noise import noise_custom
-
+from contracts.simplex3D import noise3D_custom
 from contracts.block_types import (
     BTYPE_UNINITIALIZED,
     BTYPE_AIR,
@@ -20,14 +20,14 @@ from contracts.block_types import (
 from contracts.Math64x61 import Math64x61_mul_unsafe, Math64x61_toFelt, Math64x61_ONE
 
 # Defining the weight of each octave (64.61 format)
-const OCTAVE1_W = 1152921504606846976  # 0.5
-const OCTAVE2_W = 691752902764108185  # 0.3
-const OCTAVE3_W = 461168601842738790  # 0.2
+const HEIGHTMAP_OCTAVE1_W = 1152921504606846976  # 0.5
+const HEIGHTMAP_OCTAVE2_W = 691752902764108185  # 0.3
+const HEIGHTMAP_OCTAVE3_W = 461168601842738790  # 0.2
 
 # Defining the scale of each octave (side-lengths of the grid squares)
-const OCTAVE1_S = 300
-const OCTAVE2_S = 100
-const OCTAVE3_S = 50
+const HEIGHTMAP_OCTAVE1_S = 300
+const HEIGHTMAP_OCTAVE2_S = 100
+const HEIGHTMAP_OCTAVE3_S = 50
 
 # At an amplitude of 70, the difference in height between the lowest point on the surface of the terrain and the tallest is approximately 100.
 # This is because the perlin noise function outputs a maximum value of ~0.7071 and a minimum value of about -0.7071
@@ -43,6 +43,19 @@ const TOPSOIL_AMPLITUDE = 5
 # Scale factor to be used in noise function for soil
 const TOPSOIL_SCALE = 50
 
+# Defining the weight of each octave (64.61 format)
+const CAVE_OCTAVE1_W = 1152921504606846976  # 0.5
+const CAVE_OCTAVE2_W = 691752902764108185  # 0.3
+const CAVE_OCTAVE3_W = 461168601842738790  # 0.2
+
+# Defining the scale of each octave (side-lengths of the grid squares)
+const CAVE_OCTAVE1_S = 300
+const CAVE_OCTAVE2_S = 100
+const CAVE_OCTAVE3_S = 50
+
+# Fractal noise values above this value mean a block is there, otherwise no block is there. 
+const CAVE_THRESHOLD = 115292150460684697 # 0.05
+
 # This is the terrain generation algorithm
 @view
 func generate_block{pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(
@@ -52,13 +65,13 @@ func generate_block{pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, 
 
     # TO DO: Add asserts to ensure x y and z are within the correct bounds
 
-    let (noise1) = noise_custom((x, y), OCTAVE1_S, 69)
-    let (noise2) = noise_custom((x, y), OCTAVE2_S, 420)
-    let (noise3) = noise_custom((x, y), OCTAVE3_S, 42069)
+    let (noise1) = noise_custom((x, y), HEIGHTMAP_OCTAVE1_S, 69)
+    let (noise2) = noise_custom((x, y), HEIGHTMAP_OCTAVE2_S, 420)
+    let (noise3) = noise_custom((x, y), HEIGHTMAP_OCTAVE3_S, 42069)
 
-    let (octave1) = Math64x61_mul_unsafe(noise1, OCTAVE1_W)
-    let (octave2) = Math64x61_mul_unsafe(noise2, OCTAVE2_W)
-    let (octave3) = Math64x61_mul_unsafe(noise3, OCTAVE3_W)
+    let (octave1) = Math64x61_mul_unsafe(noise1, HEIGHTMAP_OCTAVE1_W)
+    let (octave2) = Math64x61_mul_unsafe(noise2, HEIGHTMAP_OCTAVE2_W)
+    let (octave3) = Math64x61_mul_unsafe(noise3, HEIGHTMAP_OCTAVE3_W)
 
     let (surface_height) = Math64x61_toFelt(
         SURFACE_AMPLITUDE * (octave1 + octave2 + octave3) + SURFACE_BASELINE
@@ -82,11 +95,25 @@ func generate_block{pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, 
         if is_in_soil != 0:
             return (block_type=BTYPE_DIRT)
         else:
-            let (is_ore) = get_rand_num(x, y, z)
-            if is_ore != 0:
-                return (block_type=BTYPE_STONE)
+            let (noise1) = noise_custom((x, y), CAVE_OCTAVE1_S, 69)
+            let (noise2) = noise_custom((x, y), CAVE_OCTAVE2_S, 420)
+            let (noise3) = noise_custom((x, y), CAVE_OCTAVE3_S, 42069)
+
+            let (octave1) = Math64x61_mul_unsafe(noise1, CAVE_OCTAVE1_W)
+            let (octave2) = Math64x61_mul_unsafe(noise2, CAVE_OCTAVE2_W)
+            let (octave3) = Math64x61_mul_unsafe(noise3, CAVE_OCTAVE3_W)
+
+            let sum = octave1 + octave2 + octave3 
+            let (is_air) = is_le(CAVE_THRESHOLD, sum)
+            if is_air != 0:
+                return (block_type=BTYPE_AIR)
             else:
-                return (block_type=BTYPE_ORE)
+                let (is_ore) = get_rand_num(x, y, z)
+                if is_ore != 0:
+                    return (block_type=BTYPE_STONE)
+                else:
+                    return (block_type=BTYPE_ORE)
+                end
             end
         end
     else:
