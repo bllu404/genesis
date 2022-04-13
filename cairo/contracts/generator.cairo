@@ -3,9 +3,11 @@
 from starkware.cairo.common.cairo_builtins import HashBuiltin, BitwiseBuiltin
 from starkware.cairo.common.bitwise import bitwise_and
 from starkware.cairo.common.math_cmp import is_le
+from starkware.cairo.common.math import unsigned_div_rem
 from starkware.cairo.common.hash import hash2
 from contracts.perlin_noise import noise_custom
 from contracts.simplex3D import noise3D_custom
+from contracts.permutation_table import p 
 from contracts.block_types import (
     BTYPE_UNINITIALIZED,
     BTYPE_AIR,
@@ -53,8 +55,8 @@ const CAVE_OCTAVE1_S = 20
 const CAVE_OCTAVE2_S = 10
 const CAVE_OCTAVE3_S = 5
 
-# Fractal noise values above this value mean a block is there, otherwise no block is there. 
-const CAVE_THRESHOLD = 115292150460684697 # 0.05
+# A Fractal noise value above this value means no block is there, otherwise a block is there. 
+const CAVE_THRESHOLD = 161409010644958576 # 0.07
 
 # This is the terrain generation algorithm
 @view
@@ -122,15 +124,27 @@ func generate_block{pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*, 
 end
 
 # Returns a pseudo-random number between 0 and 127, using (x,y,z) as a seed
-func get_rand_num{pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*}(x, y, z) -> (
+#func get_rand_num{pedersen_ptr : HashBuiltin*, bitwise_ptr : BitwiseBuiltin*}(x, y, z) -> (
+#    rand_num
+#):
+#    alloc_locals
+#
+#    let (first_hash) = hash2{hash_ptr=pedersen_ptr}(x, y)
+#    let (final_hash) = hash2{hash_ptr=pedersen_ptr}(first_hash, z)
+#    let (rand_num) = bitwise_and(final_hash, 15)
+#    return (rand_num)
+#end
+
+func get_rand_num{range_check_ptr}(seed1,seed2,seed3) -> (
     rand_num
 ):
-    alloc_locals
+    let (_, seed1_mod) = unsigned_div_rem(seed1, 256)
 
-    let (first_hash) = hash2{hash_ptr=pedersen_ptr}(x, y)
-    let (final_hash) = hash2{hash_ptr=pedersen_ptr}(first_hash, z)
-
-    # bit-representation of 127 is 00...01111111, therefore ANDing with a hash yields the first 7 bits of the hash
-    let (rand_num) = bitwise_and(final_hash, 7)
+    let (p1) = p(seed1_mod)
+    let (_, temp1) = unsigned_div_rem(p1 + seed2, 256)
+    let (p2) = p(temp1)
+    let (_, temp2) = unsigned_div_rem(p2 + seed3, 256)
+    let (p3) = p(temp2)
+    let (_, rand_num) = unsigned_div_rem(p3, 20)
     return (rand_num)
 end

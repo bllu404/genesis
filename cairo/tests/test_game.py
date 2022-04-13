@@ -36,7 +36,7 @@ async def test_mine_block(contract_factory):
     print("Test mining blocks")
     contract = contract_factory
 
-    test_block_location = (1,1,1)
+    test_block_location = (1,1,95)
     # Get block type
     init_block = await contract.get_block(*test_block_location).invoke()
     prev_block_balance = await contract.get_block_balance(0, init_block.result.block_type).call()
@@ -65,7 +65,7 @@ async def test_place_block(contract_factory):
     print("Test placing blocks")
     contract = contract_factory
 
-    test_block_location = (1,1,2)
+    test_block_location = (1,2,95)
     # Mine a block
     mined_block = await contract.mine_block(*test_block_location).invoke()
     block_type = mined_block.result.block_type

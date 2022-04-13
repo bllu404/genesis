@@ -42,8 +42,8 @@ async def test_create_viz(contract_factory):
     plt.axes()
     colors = ["#03b1fc", "#696969", "#703307", "#347812", "#f5c011"]
 
-    BLOCKS_PER_CALL = 20
-    NUM_COLS = 20
+    BLOCKS_PER_CALL = 50
+    NUM_COLS = 50
     for i in range(NUM_COLS):
         print(f"{i+1}/{NUM_COLS}")
         blocks = (await contract.get_blocks(i,Y,Z, BLOCKS_PER_CALL).invoke()).result.block_states

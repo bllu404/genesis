@@ -193,7 +193,7 @@ func rand_num{range_check_ptr}(seed1, seed2, seed3, seed4) -> (num):
     let (p3) = p(temp2)
     let (_, temp3) = unsigned_div_rem(p3 + seed4, 256)
     let (p4) = p(temp2)
-    let (_, num) = unsigned_div_rem(p3, 12)
+    let (_, num) = unsigned_div_rem(p4, 12)
     return (num)
 end
 
