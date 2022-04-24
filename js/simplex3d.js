@@ -1,8 +1,10 @@
-const F = 1/3
-const G = 1/6
-const R_SQUARED = 0.6
+const F = 768614336404564650
+const G = 384307168202282325
+const R_SQUARED = 1383505805528216371
 
-const p=  [
+const ONE = 2**61
+
+const p = [
     151,160,137,91,90,15,131,13,201,95,96,53,194,233,7,225,140,36,103,30,69,142,
     8,99,37,240,21,10,23,190, 6,148,247,120,234,75,0,26,197,62,94,252,219,203,
     117,35,11,32,57,177,33,88,237,149,56,87,174,20,125,136,171,168, 68,175,74,165,
@@ -14,25 +16,48 @@ const p=  [
     9,129,22,39,253, 19,98,108,110,79,113,224,232,178,185, 112,104,218,246,97,228,
     251,34,242,193,238,210,144,12,191,179,162,241, 81,51,145,235,249,14,239,107,
     49,192,214, 31,181,199,106,157,184, 84,204,176,115,121,50,45,127, 4,150,254,
-    138,236,205,93,222,114,67,29,24,72,243,141,128,195,78,66,215,61,156,180]
+    138,236,205,93,222,114,67,29,24,72,243,141,128,195,78,66,215,61,156,180
+]
 
+const gradients = [
+    [1,1,0],
+    [-1,1,0],
+    [1,-1,0],
+    [-1,-1,0],
+    [1,0,1],
+    [-1,0,1],
+    [1,0,-1],
+    [-1,0,-1],
+    [0,1,1],
+    [0,-1,1],
+    [0,1,-1],
+    [0,-1,-1]
+]
 
 function dot(a,b) {
     return a[0]*b[0] + a[1]*b[1] + a[2]*b[2];
 }
 
+function randNum(a, b, c, d) {
+    aMod = a % 256;
+    bMod = b % 256;
+    cMod = c % 256;
+}
+
 function noise3DCustom(x,y,z, scale, seed) {
-    let xScaled = x/scale;
-    let yScaled = y/scale;
-    let zScaled = z/scale;
 
-    let skew = (xScaled + yScaled + zScaled) * F;
+    let scale64x61 = to64x61(scale);
+    let xScaled = div(to64x61(x), scale64x61);
+    let yScaled = div(to64x61(y), scale64x61);
+    let zScaled = div(to64x61(z), scale64x61);
 
-    let i = Math.floor(xScaled + skew);
-    let j = Math.floor(yScaled + skew);
-    let k = Math.floor(zScaled + skew);
+    let skew = mul(xScaled + yScaled + zScaled, F);
 
-    let unskew = (i + j + k)*G;
+    let i = to64x61(from64x61(xScaled + skew));
+    let j = to64x61(from64x61(yScaled + skew));
+    let k = to64x61(from64x61(zScaled + skew));
+
+    let unskew = mul(i + j + k, G);
 
     let x0 = xScaled - i + unskew;
     let y0 = yScaled - j + unskew;
@@ -48,26 +73,26 @@ function noise3DCustom(x,y,z, scale, seed) {
 
     if (x0 <= y0) {
         if (y0 <= z0) {
-            i1 = 0; j1 = 0; k1 = 1;
-            i2 = 0; j2 = 1; k2 = 1;
+            i1 = 0; j1 = 0; k1 = ONE;
+            i2 = 0; j2 = ONE; k2 = ONE;
         } else if (x0 <= z0) {
-            i1 = 0; j1 = 1; k1 = 0;
-            i2 = 0; j2 = 1; k2 = 1;
+            i1 = 0; j1 = ONE; k1 = 0;
+            i2 = 0; j2 = ONE; k2 = ONE;
         }
         else {
-            i1 = 0; j1 = 1; k1 = 0;
-            i2 = 1; j2 = 1; k2 = 0;
+            i1 = 0; j1 = ONE; k1 = 0;
+            i2 = ONE; j2 = ONE; k2 = 0;
         }
     } else {
         if (z0 <= y0) {
-            i1 = 1; j1 = 0; k1 = 0;
-            i2 = 1; j2 = 1; k2 = 0;
+            i1 = ONE; j1 = 0; k1 = 0;
+            i2 = ONE; j2 = ONE; k2 = 0;
         } else if (z0 <= x0) {
-            i1 = 1; j1 = 0; k1 = 0;
-            i2 = 1; j2 = 0; k2 = 1;
+            i1 = ONE; j1 = 0; k1 = 0;
+            i2 = ONE; j2 = 0; k2 = ONE;
         } else {
-            i1 = 0; j1 = 0; k1 = 1;
-            i2 = 1; j2 = 0; k2 = 1;
+            i1 = 0; j1 = 0; k1 = ONE;
+            i2 = ONE; j2 = 0; k2 = ONE;
         }
     }
 
@@ -79,12 +104,27 @@ function noise3DCustom(x,y,z, scale, seed) {
     let y2 = y0 - j2 + 2*G; 
     let z2 = z0 - k2 + 2*G;
 
-    let x3 = x0 - Math64x61_ONE + 3*G 
-    let y3 = y0 - Math64x61_ONE + 3*G 
-    let z3 = z0 - Math64x61_ONE + 3*G
-    
+    let x3 = x0 - ONE + 3*G 
+    let y3 = y0 - ONE + 3*G 
+    let z3 = z0 - ONE + 3*G
+
     return xScaled;
 }
 
-console.log(noise3DCustom(1,2,3, 10,2))
+function to64x61(num) {
+    return num*ONE; 
+}
 
+function from64x61(num) {
+    return Math.floor(num/ONE);
+}
+
+function mul(a, b) {
+    return Math.floor((a*b)/ONE);
+}
+
+function div(a, b) {
+    return Math.floor(a/b)*ONE;
+}
+
+console.log(noise3DCustom(250,2,3, 1000,2));
