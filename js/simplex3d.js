@@ -20,28 +20,34 @@ const p = [
 ]
 
 const gradients = [
-    [1,1,0],
-    [-1,1,0],
-    [1,-1,0],
-    [-1,-1,0],
-    [1,0,1],
-    [-1,0,1],
-    [1,0,-1],
-    [-1,0,-1],
-    [0,1,1],
-    [0,-1,1],
-    [0,1,-1],
-    [0,-1,-1]
+    [ONE,ONE,0],
+    [-ONE,ONE,0],
+    [ONE,-ONE,0],
+    [-ONE,-ONE,0],
+    [ONE,0,ONE],
+    [-ONE,0,ONE],
+    [ONE,0,-ONE],
+    [-ONE,0,-ONE],
+    [0,ONE,ONE],
+    [0,-ONE,ONE],
+    [0,ONE,-ONE],
+    [0,-ONE,-ONE]
 ]
 
-function dot(a,b) {
-    return a[0]*b[0] + a[1]*b[1] + a[2]*b[2];
+function randNum(a, b, c, d) {
+
+    let temp1 = a % 256;
+    let p1 = p[temp1];
+    let temp2 = (b + p1) % 256;
+    let p2 = p[temp2];
+    let temp3 = (c + p2) % 256;
+    let p3 = p[temp3];
+    let temp4 = (d + p3) % 256;
+    return p[temp4];
 }
 
-function randNum(a, b, c, d) {
-    aMod = a % 256;
-    bMod = b % 256;
-    cMod = c % 256;
+function selectVector(x, y, z, seed) {
+    return gradients[randNum(x,y,z,seed) % 12];
 }
 
 function noise3DCustom(x,y,z, scale, seed) {
@@ -108,7 +114,39 @@ function noise3DCustom(x,y,z, scale, seed) {
     let y3 = y0 - ONE + 3*G 
     let z3 = z0 - ONE + 3*G
 
-    return xScaled;
+    let g0 = selectVector(i,j,k, seed);
+    let g1 = selectVector(i + i1, i + j1, i + k1, seed);
+    let g2 = selectVector(i + i2, i + j2, k + k2, seed);
+    let g3 = selectVector(i + ONE, j + ONE, k + ONE, seed);
+
+    let n0 = getContribution(x0, y0, z0, g0);
+    let n1 = getContribution(x1, y1, z1, g1);
+    let n2 = getContribution(x2, y2, z2, g2);
+    let n3 = getContribution(x3, y3, z3, g3);
+
+    return 32 * (n0 + n1 + n2 + n3);
+}
+
+function getContribution(x,y,z, point) {
+    let xSqrd = mul(x,x);
+    let ySqrd = mul(y,y);
+    let zSqrd = mul(z,z);
+
+    let t = R_SQUARED - xSqrd - ySqrd - zSqrd;
+
+    if (t >= 0) {
+        let tSqrd = mul(t,t);
+        let tPow4 = mul(tSqrd, tSqrd);
+        let dotProd = dot(x,y,z, point);
+
+        return mul(dotProd, tPow4);
+    } else {
+        return 0;
+    }
+}
+
+function dot(x,y,z, point) {
+    return mul(x, point[0]) + mul(y, point[1]) + mul(z, point[2]);
 }
 
 function to64x61(num) {
@@ -124,7 +162,9 @@ function mul(a, b) {
 }
 
 function div(a, b) {
-    return Math.floor(a/b)*ONE;
+    return Math.floor(a*ONE/b);
 }
 
-console.log(noise3DCustom(250,2,3, 1000,2));
+for (let i = 0; i < 10; i++) {
+    console.log(noise3DCustom(250 + i,2,3, 100,2)/ONE);
+}
