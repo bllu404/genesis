@@ -115,8 +115,8 @@ function noise3DCustom(x,y,z, scale, seed) {
     let z3 = z0 - ONE + 3*G
 
     let g0 = selectVector(i,j,k, seed);
-    let g1 = selectVector(i + i1, i + j1, i + k1, seed);
-    let g2 = selectVector(i + i2, i + j2, k + k2, seed);
+    let g1 = selectVector(i + i1, j + j1, k + k1, seed);
+    let g2 = selectVector(i + i2, j + j2, k + k2, seed);
     let g3 = selectVector(i + ONE, j + ONE, k + ONE, seed);
 
     let n0 = getContribution(x0, y0, z0, g0);
@@ -165,6 +165,17 @@ function div(a, b) {
     return Math.floor(a*ONE/b);
 }
 
-for (let i = 0; i < 10; i++) {
-    console.log(noise3DCustom(250 + i,2,3, 100,2)/ONE);
+console.log("\nAlong x-axis");
+for (let i = 0; i < 20; i++) {
+    console.log(noise3DCustom(100 + i,100,100, 100, 69)/ONE);
+}
+
+console.log("\nAlong y-axis");
+for (let i = 0; i < 20; i++) {
+    console.log(noise3DCustom(100,100 + i,100, 100, 69)/ONE);
+}
+
+console.log("\nAlong z-axis");
+for (let i = 0; i < 20; i++) {
+    console.log(noise3DCustom(100,100,100 + i, 100, 69)/ONE);
 }
