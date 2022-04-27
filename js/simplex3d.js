@@ -5,24 +5,24 @@
 //
 //
 // ***************************************************************************** //
-const F = 768614336404564650
-const G = 384307168202282325
-const R_SQUARED = 1383505805528216371
-const ONE = 2**61
+const F = 768614336404564650n
+const G = 384307168202282325n
+const R_SQUARED = 1383505805528216371n
+const ONE = BigInt(2**61)
 
 const gradients = [
-    [ONE,ONE,0],
-    [-ONE,ONE,0],
-    [ONE,-ONE,0],
-    [-ONE,-ONE,0],
-    [ONE,0,ONE],
-    [-ONE,0,ONE],
-    [ONE,0,-ONE],
-    [-ONE,0,-ONE],
-    [0,ONE,ONE],
-    [0,-ONE,ONE],
-    [0,ONE,-ONE],
-    [0,-ONE,-ONE]
+    [ONE,ONE,0n],
+    [-ONE,ONE,0n],
+    [ONE,-ONE,0n],
+    [-ONE,-ONE,0n],
+    [ONE,0n,ONE],
+    [-ONE,0n,ONE],
+    [ONE,0n,-ONE],
+    [-ONE,0n,-ONE],
+    [0n,ONE,ONE],
+    [0n,-ONE,ONE],
+    [0n,ONE,-ONE],
+    [0n,-ONE,-ONE]
 ]
 
 const p = [
@@ -48,10 +48,10 @@ const p = [
 //
 // *********************************************************************** //
 console.log("\nAlong x-axis");
-for (let i = 0; i < 20; i++) {
-    console.log(noise3DCustom(100 - i,100,100, 100, 69)/ONE);
+for (let i = 0n; i < 20n; i++) {
+    console.log(noise3DCustom(100n - i,100n,100n, 100n, 69n));
 }
-
+/*
 console.log("\nAlong y-axis");
 for (let i = 0; i < 20; i++) {
     console.log(noise3DCustom(100,100 + i,100, 100, 69)/ONE);
@@ -60,7 +60,7 @@ for (let i = 0; i < 20; i++) {
 console.log("\nAlong z-axis");
 for (let i = 0; i < 20; i++) {
     console.log(noise3DCustom(100,100 + i,100 + i, 100, 69)/ONE);
-}
+}*/
 
 // ********************************* PERLIN NOISE ********************************* // 
 //
@@ -112,7 +112,8 @@ function simplexRandNum(a, b, c, d) {
 }
 
 function selectVector(x, y, z, seed) {
-    return gradients[simplexRandNum(x,y,z,seed) % 12];
+
+    return gradients[simplexRandNum(Number(x),Number(y),Number(z),Number(seed)) % 12];
 }
 
 function noise3DCustom(x,y,z, scale, seed) {
@@ -144,29 +145,29 @@ function noise3DCustom(x,y,z, scale, seed) {
 
     if (x0 <= y0) {
         if (y0 <= z0) {
-            i1 = 0; j1 = 0; k1 = ONE;
-            i2 = 0; j2 = ONE; k2 = ONE;
+            i1 = 0n; j1 = 0n; k1 = ONE;
+            i2 = 0n; j2 = ONE; k2 = ONE;
         } else {
             if (x0 <= z0) {
-                i1 = 0; j1 = ONE; k1 = 0;
-                i2 = 0; j2 = ONE; k2 = ONE;
+                i1 = 0n; j1 = ONE; k1 = 0n;
+                i2 = 0n; j2 = ONE; k2 = ONE;
             }
             else {
-                i1 = 0; j1 = ONE; k1 = 0;
-                i2 = ONE; j2 = ONE; k2 = 0;
+                i1 = 0n; j1 = ONE; k1 = 0n;
+                i2 = ONE; j2 = ONE; k2 = 0n;
             }
         }
     } else {
         if (z0 <= y0) {
-            i1 = ONE; j1 = 0; k1 = 0;
-            i2 = ONE; j2 = ONE; k2 = 0;
+            i1 = ONE; j1 = 0n; k1 = 0n;
+            i2 = ONE; j2 = ONE; k2 = 0n;
         } else {
             if (z0 <= x0) {
-                i1 = ONE; j1 = 0; k1 = 0;
-                i2 = ONE; j2 = 0; k2 = ONE;
+                i1 = ONE; j1 = 0n; k1 = 0n;
+                i2 = ONE; j2 = 0n; k2 = ONE;
             } else {
-                i1 = 0; j1 = 0; k1 = ONE;
-                i2 = ONE; j2 = 0; k2 = ONE;
+                i1 = 0n; j1 = 0n; k1 = ONE;
+                i2 = ONE; j2 = 0n; k2 = ONE;
             }
         }
     }
@@ -175,13 +176,13 @@ function noise3DCustom(x,y,z, scale, seed) {
     let y1 = y0 - j1 + G; 
     let z1 = z0 - k1 + G; 
 
-    let x2 = x0 - i2 + 2*G; 
-    let y2 = y0 - j2 + 2*G; 
-    let z2 = z0 - k2 + 2*G;
+    let x2 = x0 - i2 + 2n*G; 
+    let y2 = y0 - j2 + 2n*G; 
+    let z2 = z0 - k2 + 2n*G;
 
-    let x3 = x0 - ONE + 3*G; 
-    let y3 = y0 - ONE + 3*G; 
-    let z3 = z0 - ONE + 3*G;
+    let x3 = x0 - ONE + 3n*G; 
+    let y3 = y0 - ONE + 3n*G; 
+    let z3 = z0 - ONE + 3n*G;
 
     let g0 = selectVector(i,j,k, seed);
     let g1 = selectVector(i + i1, j + j1, k + k1, seed);
@@ -193,7 +194,7 @@ function noise3DCustom(x,y,z, scale, seed) {
     let n2 = getContribution(x2, y2, z2, g2);
     let n3 = getContribution(x3, y3, z3, g3);
 
-    return 32 * (n0 + n1 + n2 + n3);
+    return 32n * (n0 + n1 + n2 + n3);
 }
 
 function getContribution(x,y,z, point) {
@@ -203,14 +204,14 @@ function getContribution(x,y,z, point) {
 
     let t = R_SQUARED - xSqrd - ySqrd - zSqrd;
 
-    if (t >= 0) {
+    if (t >= 0n) {
         let tSqrd = mul(t,t);
         let tPow4 = mul(tSqrd, tSqrd);
         let dotProd = simplexDot(x,y,z, point);
 
         return mul(dotProd, tPow4);
     } else {
-        return 0;
+        return 0n;
     }
 }
 
@@ -233,13 +234,13 @@ function to64x61(num) {
 }
 
 function from64x61(num) {
-    return Math.floor(num/ONE);
+    return num/ONE;
 }
 
 function mul(a, b) {
-    return Math.floor((a*b)/ONE);
+    return (a*b)/ONE;
 }
 
 function div(a, b) {
-    return Math.floor(a*ONE/b);
+    return (a*ONE)/b;
 }
