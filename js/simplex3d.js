@@ -9,6 +9,7 @@ const F = 768614336404564650n
 const G = 384307168202282325n
 const R_SQUARED = 1383505805528216371n
 const ONE = BigInt(2**61)
+const HALF_SQRT = 1630477227105714176n
 
 const gradients = [
     [ONE,ONE,0n],
@@ -23,6 +24,17 @@ const gradients = [
     [0n,-ONE,ONE],
     [0n,ONE,-ONE],
     [0n,-ONE,-ONE]
+]
+
+const perlinGradients = [
+    [-HALF_SQRT, -HALF_SQRT],
+    [-HALF_SQRT, HALF_SQRT],
+    [HALF_SQRT, -HALF_SQRT],
+    [HALF_SQRT, HALF_SQRT],
+    [0, ONE],
+    [ONE, 0],
+    [0, -ONE],
+    [-ONE, 0]
 ]
 
 const p = [
@@ -89,6 +101,10 @@ function perlinRandNum(a,b,c) {
     return p[temp3];
 }
 
+function selectGradientPerlin(x, y, seed) {
+    return perlinGradients[perlinRandNum(x,y, seed)];
+}
+
 function getNearestGridline(coord, scale) {
     let scaledCoord = coord / scale;
     return to64x61(scaledCoord);
@@ -116,6 +132,50 @@ function fadeFunc(x) {
     let xSquared = x*x;
     let xCubed = xSquared*x;
     return 6n*xSquared*xCubed - 15n*xSquared*xSquared + 10n*xCubed;
+}
+
+function noise2DCustom(x, y, scale, seed) {
+    let scale64x61 = to64x61(scale);
+
+    let x64x61 = to64x61(x);
+    let y64x61 = to64x61(y);
+
+    let xScaled = div(to64x61(x), scale64x61);
+    let yScaled = div(to64x61(y), scale64x61);
+    let pointScaled = [xScaled, yScaled];
+
+    let lowerX = getNearestGridline(x, scale);
+    let lowerY = getNearestGridline(y, scale);
+
+    let upperX = lowerX + ONE;
+    let upperY = lowerY + ONE;
+
+    let lowXlowYGradient = selectGradientPerlin(lowerX, lowerY, seed);
+    let lowXUppYGradient = selectGradientPerlin(lowerX, upperY, seed);
+    let uppXlowYGradient = selectGradientPerlin(upperX, lowerY, seed);
+    let uppXUppYGradient = selectGradientPerlin(upperX, upperY, seed);
+
+    let lowXlowYOffset = getOffsetVec(pointScaled, [lowerX, lowerY]);
+    let lowXUppYOffset = getOffsetVec(pointScaled, [lowerX, upperY]);
+    let uppXlowYOffset = getOffsetVec(pointScaled, [upperX, lowerY]);
+    let uppXUppYOffset = getOffsetVec(pointScaled, [upperX, upperY]);
+
+    let dotLowXLowY = perlinDot(lowXlowYGradient, lowXlowYOffset);
+    let dotLowXUpperY = perlinDot(lowXUppYGradient, lowXUppYOffset);
+    let dotUppXLowY = perlinDot(uppXlowYGradient, uppXlowYOffset);
+    let dotUppXUppY = perlinDot(uppXUppYGradient, uppXUppYOffset);
+
+    let diff1 = xScaled - lowerX;
+    let diff2 = yScaled - lowerY;
+
+    let faded1 = fadeFunc(diff1);
+    let faded2 = fadeFunc(diff2);
+
+    let linterpLowerY = linterp(dotLowXLowY, dotUppXLowY, faded1);
+    let linterpUpperY = linterp(dotLowXUpperY, dotUppXUpperY, faded1);
+    let linterpFinal = linterp(linterpLowerY, linterpUpperY, faded2);
+
+    return linterpFinal;
 }
 // ********************************* SIMPLEX NOISE ********************************* // 
 //
