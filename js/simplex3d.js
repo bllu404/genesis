@@ -146,9 +146,9 @@ for (let i = 0; i < 20; i++) {
 // *********************************************************************** //
 
 function generateBlock(x,y,z) {
-    let noise1 = noise2DCustom(x, y, HEIGHTMAP_OCTAVE1_S, 69)
-    let noise2 = noise2DCustom(x, y, HEIGHTMAP_OCTAVE2_S, 420)
-    let noise3 = noise2DCustom(x, y, HEIGHTMAP_OCTAVE3_S, 42069)
+    let noise1 = noise2DCustom(x, y, HEIGHTMAP_OCTAVE1_S, 69n)
+    let noise2 = noise2DCustom(x, y, HEIGHTMAP_OCTAVE2_S, 420n)
+    let noise3 = noise2DCustom(x, y, HEIGHTMAP_OCTAVE3_S, 42069n)
 
     let octave1 = mul(noise1, HEIGHTMAP_OCTAVE1_W)
     let octave2 = mul(noise2, HEIGHTMAP_OCTAVE2_W)
@@ -159,16 +159,16 @@ function generateBlock(x,y,z) {
     if (z == surfaceHeight) {
         return GRASS;
     } else if (z < surfaceHeight) {
-        let soilDisplacementNoise = noise2DCustom(x,y, TOPSOIL_SCALE);
+        let soilDisplacementNoise = noise2DCustom(x,y, TOPSOIL_SCALE, 12345n);
         let soilDepth = from64x61(TOPSOIL_BASELINE + TOPSOIL_AMPLITUDE * soilDisplacementNoise);
 
         if (surfaceHeight - soilDepth <= z) {
             return DIRT;
 
         } else {
-            let noise1 = noise3DCustom(x,y,z, CAVE_OCTAVE1_S, 69);
-            let noise2 = noise3DCustom(x,y,z, CAVE_OCTAVE2_S, 420);
-            let noise3 = noise3DCustom(x,y,z, CAVE_OCTAVE2_S, 42069);
+            let noise1 = noise3DCustom(x,y,z, CAVE_OCTAVE1_S, 69n);
+            let noise2 = noise3DCustom(x,y,z, CAVE_OCTAVE2_S, 420n);
+            let noise3 = noise3DCustom(x,y,z, CAVE_OCTAVE2_S, 42069n);
 
             let octave1 = mul(noise1, CAVE_OCTAVE1_W);
             let octave2 = mul(noise2, CAVE_OCTAVE2_W);
@@ -178,11 +178,11 @@ function generateBlock(x,y,z) {
             if (CAVE_THRESHOLD <= sum) {
                 return AIR;
             } else {
-                let isOre = perlinRandNum(x,y,z) % 8;
+                let isOre = (perlinRandNum(Number(x),Number(y),Number(z)) % 8) == 0;
                 if (isOre) {
-                    return STONE;
-                } else {
                     return ORE;
+                } else {
+                    return STONE;
                 }
             }
         }
