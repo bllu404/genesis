@@ -31,10 +31,10 @@ const perlinGradients = [
     [-HALF_SQRT, HALF_SQRT],
     [HALF_SQRT, -HALF_SQRT],
     [HALF_SQRT, HALF_SQRT],
-    [0, ONE],
-    [ONE, 0],
-    [0, -ONE],
-    [-ONE, 0]
+    [0n, ONE],
+    [ONE, 0n],
+    [0n, -ONE],
+    [-ONE, 0n]
 ]
 
 const p = [
@@ -63,6 +63,11 @@ console.log("\nAlong x-axis");
 for (let i = 0n; i < 20n; i++) {
     console.log(noise3DCustom(100n - i,100n,100n, 100n, 69n));
 }
+
+console.log("\nAlong x-axis - perlin");
+for (let i = 0n; i < 20n; i++) {
+    console.log(noise2DCustom(150n - i,150n, 100n, 69n));
+}
 /*
 console.log("\nAlong y-axis");
 for (let i = 0; i < 20; i++) {
@@ -82,12 +87,6 @@ for (let i = 0; i < 20; i++) {
 //
 // ******************************************************************************** //
 
-
-
-function noise2DCustom(x,y, scale, seed) {
-
-}
-
 function perlinDot(a, b) {
     return mul(a[0], b[0]) + mul(a[1], b[1]);
 }
@@ -102,7 +101,7 @@ function perlinRandNum(a,b,c) {
 }
 
 function selectGradientPerlin(x, y, seed) {
-    return perlinGradients[perlinRandNum(x,y, seed)];
+    return perlinGradients[perlinRandNum(x,y, seed) % 8];
 }
 
 function getNearestGridline(coord, scale) {
@@ -129,9 +128,9 @@ function linterp(a, b, t) {
 }
 
 function fadeFunc(x) {
-    let xSquared = x*x;
-    let xCubed = xSquared*x;
-    return 6n*xSquared*xCubed - 15n*xSquared*xSquared + 10n*xCubed;
+    let xSquared = mul(x,x);
+    let xCubed = mul(xSquared,x);
+    return 6n*mul(xSquared,xCubed) - 15n*mul(xSquared,xSquared) + 10n*xCubed;
 }
 
 function noise2DCustom(x, y, scale, seed) {
@@ -150,19 +149,19 @@ function noise2DCustom(x, y, scale, seed) {
     let upperX = lowerX + ONE;
     let upperY = lowerY + ONE;
 
-    let lowXlowYGradient = selectGradientPerlin(lowerX, lowerY, seed);
-    let lowXUppYGradient = selectGradientPerlin(lowerX, upperY, seed);
-    let uppXlowYGradient = selectGradientPerlin(upperX, lowerY, seed);
-    let uppXUppYGradient = selectGradientPerlin(upperX, upperY, seed);
+    let lowXLowYGradient = selectGradientPerlin(Number(lowerX), Number(lowerY), Number(seed));
+    let lowXUppYGradient = selectGradientPerlin(Number(lowerX), Number(upperY), Number(seed));
+    let uppXLowYGradient = selectGradientPerlin(Number(upperX), Number(lowerY), Number(seed));
+    let uppXUppYGradient = selectGradientPerlin(Number(upperX), Number(upperY), Number(seed));
 
-    let lowXlowYOffset = getOffsetVec(pointScaled, [lowerX, lowerY]);
+    let lowXLowYOffset = getOffsetVec(pointScaled, [lowerX, lowerY]);
     let lowXUppYOffset = getOffsetVec(pointScaled, [lowerX, upperY]);
-    let uppXlowYOffset = getOffsetVec(pointScaled, [upperX, lowerY]);
+    let uppXLowYOffset = getOffsetVec(pointScaled, [upperX, lowerY]);
     let uppXUppYOffset = getOffsetVec(pointScaled, [upperX, upperY]);
 
-    let dotLowXLowY = perlinDot(lowXlowYGradient, lowXlowYOffset);
+    let dotLowXLowY = perlinDot(lowXLowYGradient, lowXLowYOffset);
     let dotLowXUpperY = perlinDot(lowXUppYGradient, lowXUppYOffset);
-    let dotUppXLowY = perlinDot(uppXlowYGradient, uppXlowYOffset);
+    let dotUppXLowY = perlinDot(uppXLowYGradient, uppXLowYOffset);
     let dotUppXUppY = perlinDot(uppXUppYGradient, uppXUppYOffset);
 
     let diff1 = xScaled - lowerX;
@@ -172,7 +171,7 @@ function noise2DCustom(x, y, scale, seed) {
     let faded2 = fadeFunc(diff2);
 
     let linterpLowerY = linterp(dotLowXLowY, dotUppXLowY, faded1);
-    let linterpUpperY = linterp(dotLowXUpperY, dotUppXUpperY, faded1);
+    let linterpUpperY = linterp(dotLowXUpperY, dotUppXUppY, faded1);
     let linterpFinal = linterp(linterpLowerY, linterpUpperY, faded2);
 
     return linterpFinal;
