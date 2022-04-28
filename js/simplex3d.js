@@ -89,8 +89,34 @@ function perlinRandNum(a,b,c) {
     return p[temp3];
 }
 
+function getNearestGridline(coord, scale) {
+    let scaledCoord = coord / scale;
+    return to64x61(scaledCoord);
+}
 
+function vecToVec64x61(vec) {
+    return [to64x61(vec[0]), to64x61(vec[1])];
+}
 
+function scaleVec(vec, scale) {
+    return [div(vec[0], scale), div(vec[1], scale)];
+}
+
+function getOffsetVec(a, b) {
+    return [a[0] - b[0], a[1] - b[1]];
+}
+
+function linterp(a, b, t) {
+    let diff = a - b;
+    let weightedDiff = mul(diff, t);
+    return a + weightedDiff;
+}
+
+function fadeFunc(x) {
+    let xSquared = x*x;
+    let xCubed = xSquared*x;
+    return 6n*xSquared*xCubed - 15n*xSquared*xSquared + 10n*xCubed;
+}
 // ********************************* SIMPLEX NOISE ********************************* // 
 //
 //
@@ -112,7 +138,6 @@ function simplexRandNum(a, b, c, d) {
 }
 
 function selectVector(x, y, z, seed) {
-
     return gradients[simplexRandNum(Number(x),Number(y),Number(z),Number(seed)) % 12];
 }
 
