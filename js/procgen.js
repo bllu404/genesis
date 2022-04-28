@@ -123,8 +123,8 @@ for (let i = 0n; i < 20n; i++) {
 }
 
 console.log("generator");
-for (let i = 0n; i < 20n; i++) {
-    console.log(generateBlock(50n, 50n, 80n + i));
+for (let i = 0; i < 20; i++) {
+    console.log(generateBlock(50, 50, 80 + i));
 }
 /*
 console.log("\nAlong y-axis");
@@ -145,7 +145,11 @@ for (let i = 0; i < 20; i++) {
 //
 // *********************************************************************** //
 
-function generateBlock(x,y,z) {
+function generateBlock(xReg,yReg,zReg) {
+    let x = BigInt(xReg);
+    let y = BigInt(yReg);
+    let z = BigInt(zReg);
+
     let noise1 = noise2DCustom(x, y, HEIGHTMAP_OCTAVE1_S, 69n)
     let noise2 = noise2DCustom(x, y, HEIGHTMAP_OCTAVE2_S, 420n)
     let noise3 = noise2DCustom(x, y, HEIGHTMAP_OCTAVE3_S, 42069n)
